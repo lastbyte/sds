@@ -44,7 +44,7 @@ export const columns: ColumnDef<ListItem>[] = [
         </div>
       );
     },
-    minSize: 150,
+    minSize: 250,
     maxSize: 500,
     cell: ({ row }) => (
       <div className="flex flex-col cursor-pointer">
