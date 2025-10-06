@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex min-h-svh w-full flex-col items-start relative">
       <Navigation />
-      <div className="flex w-full flex-1 flex-col items-center min-hsvh overflow-auto">
+      <div className="flex w-full flex-1 flex-col items-center min-hsvh overflow-auto mt-20">
         <Routes>
           {/* Define your routes here */}
           <Route path="/discover" element={<Discover />} />

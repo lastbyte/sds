@@ -3,7 +3,7 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 
 export default function Navigation() {
   return (
-    <nav className="flex w-full items-center justify-between px-6 py-3 border-b-2 border-gray-300 sticky">
+    <nav className="flex w-full items-center justify-between px-6 py-3 border-b-2 border-gray-300 fixed top-0 bg-white z-[999]">
       <div className="flex flex-row items-center gap-4">
         <Link className="text-2xl font-extrabold logo" to="/">
           SDS
