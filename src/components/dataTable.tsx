@@ -65,7 +65,7 @@ export function DataTable() {
           onChange={(event) =>
             table.getColumn("title")?.setFilterValue(event.target.value)
           }
-          className="max-w-lg h-10 text-2xl"
+          className="max-w-lg h-10"
         />
       </div>
       <div className="overflow-hidden rounded-md border">
