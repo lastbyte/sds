@@ -60,19 +60,20 @@ export function DataTable() {
     <div className="w-full">
       <div className="flex items-center py-4">
         <Input
+          type="text"
           placeholder="Filter design board..."
           value={(table.getColumn("title")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
             table.getColumn("title")?.setFilterValue(event.target.value)
           }
-          className="max-w-lg h-10"
+          className="max-w-lg h-12 search-input"
         />
       </div>
       <div className="overflow-hidden rounded-md border">
         <Table className="min-w-full" style={{ tableLayout: "fixed" }}>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id} className="bg-gray-100 h-12">
+              <TableRow key={headerGroup.id} className="bg-secondary h-12">
                 {headerGroup.headers.map((header) => {
                   return (
                     <TableHead
@@ -95,7 +96,7 @@ export function DataTable() {
           <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
-                <TableRow key={row.id} className="hover:bg-gray-50">
+                <TableRow key={row.id} className="hover:bg-secondary">
                   {row.getVisibleCells().map((cell) => (
                     <TableCell
                       key={cell.id}

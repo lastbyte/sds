@@ -2,12 +2,16 @@ import { Excalidraw } from "@excalidraw/excalidraw";
 import "@excalidraw/excalidraw/index.css";
 import type { ExcalidrawInitialDataState } from "@excalidraw/excalidraw/types";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 export default function Whiteboard() {
   const [initialData, setInitialData] =
     useState<ExcalidrawInitialDataState | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const theme = useSelector(
+    (state: { config: { theme: string } }) => state.config.theme
+  );
 
   const params = useParams();
 
@@ -59,6 +63,7 @@ export default function Whiteboard() {
         <Excalidraw
           initialData={initialData}
           viewModeEnabled={true}
+          theme={theme}
           UIOptions={{
             canvasActions: {
               loadScene: false,

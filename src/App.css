@@ -12,3 +12,7 @@
 .font-saira {
   font-family: "Saira Condensed", sans-serif;
 }
+
+input.search-input {
+  font-size: 16px !important;
+}

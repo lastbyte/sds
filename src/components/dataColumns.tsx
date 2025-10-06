@@ -74,15 +74,16 @@ export const columns: ColumnDef<ListItem>[] = [
       const difficulty = row.getValue("difficulty") as string;
       const colorClass =
         {
-          easy: "bg-green-100 text-green-800",
-          medium: "bg-yellow-100 text-yellow-800",
-          hard: "bg-red-100 text-red-800",
+          easy: "bg-green-100 text-green-800 dark:bg-green-200 dark:text-green-900",
+          medium:
+            "bg-yellow-100 text-yellow-800 dark:bg-yellow-200 dark:text-yellow-900",
+          hard: "bg-red-100 text-red-800 dark:bg-red-200 dark:text-red-900",
         }[difficulty] || "bg-gray-100 text-gray-800";
 
       return (
         <div className="flex justify-center">
           <span
-            className={` inline-block rounded-md px-2 py-1 text-xs font-medium capitalize ${colorClass}`}
+            className={`inline-block rounded-md px-2 py-1 text-xs font-medium capitalize ${colorClass}`}
           >
             {difficulty}
           </span>
@@ -102,7 +103,7 @@ export const columns: ColumnDef<ListItem>[] = [
           {tags.map((tag) => (
             <span
               key={tag}
-              className="h-fit inline-block rounded-full bg-gray-200 px-1.5 py-0.5 text-[10px] font-medium text-gray-700"
+              className="h-fit inline-block rounded-full bg-gray-200 dark:bg-gray-700 px-1.5 py-0.5 text-[10px] font-medium text-gray-700 dark:text-gray-200"
             >
               {tag}
             </span>
