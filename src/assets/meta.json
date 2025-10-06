@@ -1,0 +1,146 @@
+{
+  "title": "System Design Store",
+  "description": "A curated collection of system design resources, articles, and examples to help you master the art of designing scalable systems.",
+  "questions": [
+    {
+      "id": 1,
+      "title": "Design Uber",
+      "description": "Design a ride-sharing application like Uber, focusing on real-time location tracking, ride matching, and fare calculation.",
+      "difficulty": "hard",
+      "tags": ["Scalability", "Real-time Systems", "Microservices"]
+    },
+    {
+      "id": 2,
+      "title": "Design Twitter",
+      "description": "Design a social media platform like Twitter, focusing on tweet storage, user timelines, and follower relationships.",
+      "difficulty": "medium",
+      "tags": ["Database Design", "Caching", "Load Balancing"]
+    },
+    {
+      "id": 3,
+      "title": "Design a URL Shortener",
+      "description": "Design a URL shortening service like Bitly, focusing on generating short URLs, redirecting, and analytics tracking.",
+      "difficulty": "easy",
+      "tags": ["Hashing", "Database Design", "Scalability"]
+    },
+    {
+      "id": 4,
+      "title": "Design an Online Bookstore",
+      "description": "Design an online bookstore like Amazon, focusing on product catalog, user reviews, and order processing.",
+      "difficulty": "medium",
+      "tags": ["E-commerce", "Database Design", "Microservices"]
+    },
+    {
+      "id": 5,
+      "title": "Design a Chat Application",
+      "description": "Design a real-time chat application like WhatsApp, focusing on message delivery, user presence, and group chats.",
+      "difficulty": "hard",
+      "tags": ["Real-time Systems", "WebSockets", "Scalability"]
+    },
+    {
+      "id": 6,
+      "title": "Design a Video Streaming Service",
+      "description": "Design a video streaming platform like Netflix, focusing on content delivery, user recommendations, and subscription management.",
+      "difficulty": "hard",
+      "tags": ["Content Delivery Networks", "Database Design", "Scalability"]
+    },
+    {
+      "id": 7,
+      "title": "Design a File Storage Service",
+      "description": "Design a cloud file storage service like Dropbox, focusing on file upload/download, synchronization, and sharing.",
+      "difficulty": "medium",
+      "tags": ["File Systems", "Database Design", "Scalability"]
+    },
+    {
+      "id": 8,
+      "title": "Design a News Feed System",
+      "description": "Design a news feed system like Facebook, focusing on content ranking, user interactions, and real-time updates.",
+      "difficulty": "hard",
+      "tags": ["Algorithms", "Real-time Systems", "Scalability"]
+    },
+    {
+      "id": 9,
+      "title": "Design an Online Payment System",
+      "description": "Design an online payment system like PayPal, focusing on transaction processing, fraud detection, and security.",
+      "difficulty": "hard",
+      "tags": ["Security", "Database Design", "Scalability"]
+    },
+    {
+      "id": 10,
+      "title": "Design a Ride-Sharing Application",
+      "description": "Design a ride-sharing application like Lyft, focusing on driver-rider matching, fare calculation, and real-time tracking.",
+      "difficulty": "hard",
+      "tags": ["Scalability", "Real-time Systems", "Microservices"]
+    },
+    {
+      "id": 11,
+      "title": "Design a Food Delivery Service",
+      "description": "Design a food delivery service like DoorDash, focusing on restaurant management, order processing, and delivery tracking.",
+      "difficulty": "medium",
+      "tags": ["E-commerce", "Database Design", "Microservices"]
+    },
+    {
+      "id": 12,
+      "title": "Design a Collaborative Document Editing Tool",
+      "description": "Design a collaborative document editing tool like Google Docs, focusing on real-time collaboration, version control, and access management.",
+      "difficulty": "hard",
+      "tags": ["Real-time Systems", "WebSockets", "Scalability"]
+    },
+    {
+      "id": 13,
+      "title": "Design a Job Search Platform",
+      "description": "Design a job search platform like LinkedIn, focusing on job listings, user profiles, and recommendation algorithms.",
+      "difficulty": "medium",
+      "tags": ["Database Design", "Algorithms", "Scalability"]
+    },
+    {
+      "id": 14,
+      "title": "Design a Travel Booking System",
+      "description": "Design a travel booking system like Expedia, focusing on flight/hotel search, booking management, and payment processing.",
+      "difficulty": "medium",
+      "tags": ["E-commerce", "Database Design", "Microservices"]
+    },
+    {
+      "id": 15,
+      "title": "Design a Fitness Tracking Application",
+      "description": "Design a fitness tracking application like Strava, focusing on activity tracking, social features, and data visualization.",
+      "difficulty": "easy",
+      "tags": ["Mobile Development", "Database Design", "APIs"]
+    },
+    {
+      "id": 16,
+      "title": "Design a Music Streaming Service",
+      "description": "Design a music streaming service like Spotify, focusing on music catalog, user playlists, and recommendation algorithms.",
+      "difficulty": "hard",
+      "tags": ["Content Delivery Networks", "Database Design", "Scalability"]
+    },
+    {
+      "id": 17,
+      "title": "Design a Real-Time Collaboration Platform",
+      "description": "Design a real-time collaboration platform like Slack, focusing on messaging, file sharing, and integrations.",
+      "difficulty": "hard",
+      "tags": ["Real-time Systems", "WebSockets", "Scalability"]
+    },
+    {
+      "id": 18,
+      "title": "Design an Online Learning Platform",
+      "description": "Design an online learning platform like Coursera, focusing on course management, user progress tracking, and content delivery.",
+      "difficulty": "medium",
+      "tags": ["E-learning", "Database Design", "Microservices"]
+    },
+    {
+      "id": 19,
+      "title": "Design a Social Media Analytics Tool",
+      "description": "Design a social media analytics tool like Hootsuite, focusing on data aggregation, sentiment analysis, and reporting.",
+      "difficulty": "medium",
+      "tags": ["Data Analysis", "APIs", "Scalability"]
+    },
+    {
+      "id": 20,
+      "title": "Design a Virtual Event Platform",
+      "description": "Design a virtual event platform like Hopin, focusing on event management, live streaming, and attendee engagement.",
+      "difficulty": "hard",
+      "tags": ["Real-time Systems", "WebRTC", "Scalability"]
+    }
+  ]
+}
