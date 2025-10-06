@@ -14,7 +14,7 @@ function App() {
           {/* Define your routes here */}
           <Route path="/discover" element={<Discover />} />
           <Route path="/" element={<Discover />} />
-          <Route path="/whiteboard" element={<Whiteboard />} />
+          <Route path="/whiteboard/:slug" element={<Whiteboard />} />
         </Routes>
       </div>
     </div>

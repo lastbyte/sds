@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export type ListItem = {
   id: number;
+  slug: string;
   title: string;
   description: string;
   difficulty: "easy" | "medium" | "hard";
@@ -47,7 +48,7 @@ export const columns: ColumnDef<ListItem>[] = [
     cell: ({ row }) => (
       <div className="flex flex-col cursor-pointer">
         <Link
-          to={`/whiteboard?itemId=${row.original.id}`}
+          to={`/whiteboard/${row.original.slug}`}
           className="text-ellipsis overflow-hidden whitespace-nowrap"
         >
           <div className="font-medium">{row.getValue("title") as string}</div>
