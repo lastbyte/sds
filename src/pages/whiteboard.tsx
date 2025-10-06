@@ -63,7 +63,7 @@ export default function Whiteboard() {
         <Excalidraw
           initialData={initialData}
           viewModeEnabled={true}
-          theme={theme}
+          theme={theme === "dark" ? "dark" : "light"}
           UIOptions={{
             canvasActions: {
               loadScene: false,
