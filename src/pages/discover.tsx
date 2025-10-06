@@ -1,4 +1,4 @@
-import { DataTable } from "@/components/dataTable";
+import { DataTable } from "@/components/data-table";
 import data from "@/assets/meta.json";
 
 export default function Discover() {

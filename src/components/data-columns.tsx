@@ -44,7 +44,8 @@ export const columns: ColumnDef<ListItem>[] = [
         </div>
       );
     },
-    size: 300,
+    minSize: 150,
+    maxSize: 500,
     cell: ({ row }) => (
       <div className="flex flex-col cursor-pointer">
         <Link
@@ -58,8 +59,10 @@ export const columns: ColumnDef<ListItem>[] = [
                 {row.original.description as string}
               </div>
             </TooltipTrigger>
-            <TooltipContent>
-              <div>{row.original.description as string}</div>
+            <TooltipContent className="max-w-[200px]">
+              <div className="h-fit w-full">
+                {row.original.description as string}
+              </div>
             </TooltipContent>
           </Tooltip>
         </Link>
@@ -93,13 +96,13 @@ export const columns: ColumnDef<ListItem>[] = [
   },
   {
     accessorKey: "tags",
-    size: 200,
+    size: 150,
     header: () => <div className="text-left">Tags</div>,
     cell: ({ row }) => {
       const tags = row.getValue("tags") as string[];
 
       return (
-        <div className="text-left flex flex-wrap justify-start gap-2 h-15 items-center">
+        <div className="text-left flex flex-wrap justify-start gap-2 h-fit items-center">
           {tags.map((tag) => (
             <span
               key={tag}

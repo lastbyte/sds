@@ -1,6 +1,6 @@
 {
   "title": "System Design Store",
-  "description": "A curated collection of system design resources, articles, and examples to help you master the art of designing scalable systems.",
+  "description": "A curated collection of system design examples to help you master the art of designing scalable systems. Perfect for interview preparation and learning best practices.",
   "questions": [
     {
       "id": 1,

@@ -24,7 +24,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import { columns, type ListItem } from "./dataColumns";
+import { columns, type ListItem } from "./data-columns";
 import data from "@/assets/meta.json";
 
 export function DataTable() {
@@ -61,7 +61,7 @@ export function DataTable() {
       <div className="flex items-center py-4">
         <Input
           type="text"
-          placeholder="Filter design board..."
+          placeholder="Search for a system design question topic..."
           value={(table.getColumn("title")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
             table.getColumn("title")?.setFilterValue(event.target.value)
