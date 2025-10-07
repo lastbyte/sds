@@ -26,7 +26,6 @@ export default function Whiteboard() {
           return response.json();
         })
         .then((data) => {
-          console.log("Loaded Excalidraw data:", data);
           // Transform the excalidraw file data to the format expected by initialData
           const initialDataState: ExcalidrawInitialDataState = {
             elements: data.elements || [],

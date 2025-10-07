@@ -8,6 +8,9 @@ export interface InterviewState {
   isEvaluationDialogOpen: boolean;
   isProgressDialogOpen?: boolean;
   localCopy: ExcalidrawInitialDataState | null;
+  solutionData: ExcalidrawInitialDataState | null;
+  isLoading: boolean;
+  resetCounter: number;
 }
 
 export interface InterviewActions {
@@ -19,6 +22,10 @@ export interface InterviewActions {
   loadLocalCopy: (slug: string) => ExcalidrawInitialDataState | null;
   saveLocalCopy: (data: ExcalidrawInitialDataState, slug: string) => void;
   updateLocalCopy: (data: ExcalidrawInitialDataState) => void;
+  loadSolutionData: (slug: string) => Promise<void>;
+  setSolutionData: (data: ExcalidrawInitialDataState | null) => void;
+  setIsLoading: (loading: boolean) => void;
+  incrementResetCounter: () => void;
 }
 
 export function useInterviewState() {
@@ -30,9 +37,22 @@ export function useInterviewState() {
   const [localCopy, setLocalCopy] = useState<ExcalidrawInitialDataState | null>(
     null
   );
+  const [solutionData, setSolutionData] =
+    useState<ExcalidrawInitialDataState | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [resetCounter, setResetCounter] = useState(0);
 
   // Helper functions for localStorage
   const getLocalStorageKey = (slug: string) => `excalidraw-data-${slug}`;
+
+  const removeLocalCopy = useCallback((slug: string) => {
+    try {
+      localStorage.removeItem(getLocalStorageKey(slug));
+      setLocalCopy(null);
+    } catch (error) {
+      console.error("Failed to remove from localStorage:", error);
+    }
+  }, []);
 
   const loadLocalCopy = useCallback(
     (slug: string): ExcalidrawInitialDataState | null => {
@@ -101,6 +121,37 @@ export function useInterviewState() {
     setLocalCopy(data);
   }, []);
 
+  const loadSolutionData = useCallback(async (slug: string) => {
+    try {
+      setIsLoading(true);
+      const response = await fetch(`/designs/${slug}.excalidraw`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+
+      // Transform the excalidraw file data to the format expected by initialData
+      const initialDataState: ExcalidrawInitialDataState = {
+        elements: data.elements || [],
+        appState: {
+          ...data.appState,
+          // Ensure collaborators is properly initialized
+          collaborators: data.appState?.collaborators || new Map(),
+        },
+        files: data.files || {},
+      };
+      setSolutionData(initialDataState);
+      setIsLoading(false);
+    } catch (error) {
+      console.error("Error loading Excalidraw data:", error);
+      setIsLoading(false);
+    }
+  }, []);
+
+  const incrementResetCounter = useCallback(() => {
+    setResetCounter((prev) => prev + 1);
+  }, []);
+
   return {
     state: {
       isSolution,
@@ -109,6 +160,9 @@ export function useInterviewState() {
       isEvaluationDialogOpen,
       isProgressDialogOpen,
       localCopy,
+      solutionData,
+      isLoading,
+      resetCounter,
     },
     actions: {
       setIsSolution,
@@ -119,6 +173,11 @@ export function useInterviewState() {
       loadLocalCopy,
       saveLocalCopy,
       updateLocalCopy,
+      loadSolutionData,
+      setSolutionData,
+      setIsLoading,
+      incrementResetCounter,
+      removeLocalCopy,
     },
   };
 }

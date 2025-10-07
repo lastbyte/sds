@@ -6,14 +6,17 @@ import {
   InputGroupTextarea,
 } from "@/components/ui/input-group";
 import { Code2Icon, CopyIcon } from "lucide-react";
-import { toast } from "sonner";
+import { useState } from "react";
+import { Button } from "./ui/button";
 
 export function PromptBox() {
+  const [copied, setCopied] = useState(false);
   const handleCopy = () => {
     navigator.clipboard.writeText(
       "Design a URL shortening service like bit.ly"
     );
-    toast("Prompt copied to clipboard");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
   return (
     <div className="grid w-full max-w-md gap-4">
@@ -29,8 +32,9 @@ export function PromptBox() {
             <Code2Icon />
             prompt
           </InputGroupText>
-          <InputGroupButton className="ml-auto cursor-pointer" size="icon-xs">
-            <CopyIcon onClick={handleCopy} />
+          <InputGroupButton className="ml-auto cursor-pointer gap-2 flex flex-row" onClick={handleCopy}>
+              {copied && <span className="text-sm text-green-500"> copied </span>}
+              <CopyIcon />
           </InputGroupButton>
         </InputGroupAddon>
       </InputGroup>

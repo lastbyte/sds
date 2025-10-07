@@ -22,3 +22,7 @@
 input.search-input {
   font-size: 16px !important;
 }
+
+.help-icon {
+  display: none !important;
+}

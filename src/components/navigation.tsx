@@ -1,63 +1,17 @@
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Switch } from "@/components/ui/switch";
-import type { RootState } from "@/store";
+import { useAppDispatch, type RootState } from "@/store";
 import { setTheme } from "@/store/slices/config";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import {
-  ClipboardCheckIcon,
-  EyeIcon,
-  EyeOffIcon,
-  MenuIcon,
   MoonStarIcon,
-  RefreshCcwIcon,
-  SunIcon,
+  SunIcon
 } from "lucide-react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
-import { PromptBox } from "./prompt-box";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
-interface NavigationProps {
-  showSolutionButton?: boolean;
-  isSolution?: boolean;
-  isDialogOpen?: boolean;
-  isEvaluationDialogOpen?: boolean;
-  isProgressDialogOpen?: boolean;
-  onProgressDialogOpenChange?: (open: boolean) => void;
-  onToggleSolution?: (show: boolean) => void;
-  onDialogOpenChange?: (open: boolean) => void;
-  onEvaluationDialogOpenChange?: (open: boolean) => void;
-}
-
-export default function Navigation({
-  showSolutionButton = false,
-  isSolution = false,
-  isDialogOpen = false,
-  isEvaluationDialogOpen = false,
-  isProgressDialogOpen = false,
-  onProgressDialogOpenChange,
-  onToggleSolution,
-  onEvaluationDialogOpenChange,
-  onDialogOpenChange,
-}: NavigationProps) {
-  const dispatch = useDispatch();
+export default function Navigation() {
+  const dispatch = useAppDispatch();
   const currentTheme = useSelector((state: RootState) => state.config.theme);
-  const params = useParams();
 
   const toggleTheme = () => {
     dispatch(setTheme(currentTheme === "light" ? "dark" : "light"));
@@ -70,7 +24,16 @@ export default function Navigation({
           SDS
         </Link>
       </div>
-      <div className="flex flex-row gap-4 items-center">
+      <div className="flex flex-row gap-6 items-center">
+        <div className="flex items-center gap-1 flex-row">
+          <SunIcon className="h-6 w-6 text-yellow-500" />
+          <Switch
+            id="theme-toggle"
+            checked={currentTheme === "dark"}
+            onCheckedChange={toggleTheme}
+          />
+          <MoonStarIcon className="h-6 w-6 text-gray-500" />
+        </div>
         <Link
           to="https://github.com/lastbyte/sds"
           target="_blank"
@@ -78,169 +41,7 @@ export default function Navigation({
         >
           <SiGithub size={32} className="cursor-pointer" />
         </Link>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant={"secondary"} className="cursor-pointer">
-              <MenuIcon />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="w-56">
-            <DropdownMenuItem className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <span>Theme</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <SunIcon className="text-yellow-500" />
-                <Switch
-                  checked={currentTheme === "dark"}
-                  onCheckedChange={toggleTheme}
-                />
-                <MoonStarIcon className="text-gray-500" />
-              </div>
-            </DropdownMenuItem>
-
-            {showSolutionButton && (
-              <>
-                <DropdownMenuSeparator />
-                {isSolution ? (
-                  <DropdownMenuItem onClick={() => onToggleSolution?.(false)}>
-                    <EyeOffIcon className="w-4 h-4 mr-2" />
-                    Hide Solution
-                  </DropdownMenuItem>
-                ) : (
-                  <Dialog open={isDialogOpen} onOpenChange={onDialogOpenChange}>
-                    <DialogTrigger asChild>
-                      <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
-                        <EyeIcon className="w-4 h-4 mr-2" />
-                        View Solution
-                      </DropdownMenuItem>
-                    </DialogTrigger>
-                    <DialogContent>
-                      <DialogHeader>
-                        <DialogTitle>Are you absolutely sure?</DialogTitle>
-                        <DialogDescription>
-                          Viewing the solution may spoil the fun of solving the
-                          problem on your own. Only proceed if you're okay with
-                          that!
-                        </DialogDescription>
-                      </DialogHeader>
-                      <DialogFooter>
-                        <Button
-                          variant="secondary"
-                          size="sm"
-                          className="cursor-pointer"
-                          onClick={() => {
-                            onToggleSolution?.(true);
-                            onDialogOpenChange?.(false);
-                          }}
-                        >
-                          View Solution
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="cursor-pointer"
-                          onClick={() => onDialogOpenChange?.(false)}
-                        >
-                          Cancel
-                        </Button>
-                      </DialogFooter>
-                    </DialogContent>
-                  </Dialog>
-                )}
-                <DropdownMenuItem
-                  onClick={() => onEvaluationDialogOpenChange?.(true)}
-                >
-                  <ClipboardCheckIcon className="w-4 h-4 mr-2" />
-                  Evaluate
-                </DropdownMenuItem>
-              </>
-            )}
-          </DropdownMenuContent>
-        </DropdownMenu>
       </div>
-
-      {/* Evaluation Dialog - separate from dropdown */}
-      <Dialog
-        open={isEvaluationDialogOpen}
-        onOpenChange={onEvaluationDialogOpenChange}
-      >
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>
-              Follow the following steps to evaluate your solution.
-            </DialogTitle>
-            <ul className="list-decimal flex flex-col gap-4 p-2">
-              <li>Export your design as an image.</li>
-              <li>
-                <PromptBox />
-              </li>
-              <li>
-                Copy the prompt above and attach the image into any AI tool like
-                ChatGPT, Bing Chat, or Claude.
-              </li>
-            </ul>
-          </DialogHeader>
-          <DialogFooter>
-            <Button
-              variant="outline"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => onEvaluationDialogOpenChange?.(false)}
-            >
-              Close
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
-
-      {/* clear progress Dialog -separate from dropdown */}
-      <Dialog
-        open={isProgressDialogOpen}
-        onOpenChange={onProgressDialogOpenChange}
-      >
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>
-              Follow the following steps to evaluate your solution.
-            </DialogTitle>
-            <ul className="list-decimal flex flex-col gap-4 p-2">
-              <li>Export your design as an image.</li>
-              <li>
-                <PromptBox />
-              </li>
-              <li>
-                Copy the prompt above and attach the image into any AI tool like
-                ChatGPT, Bing Chat, or Claude.
-              </li>
-            </ul>
-          </DialogHeader>
-          <DialogFooter>
-            <Button
-              variant="outline"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => {
-                if (params.slug) {
-                  localStorage.removeItem(`whiteboard:${params.slug}`);
-                }
-                onProgressDialogOpenChange?.(false);
-              }}
-            >
-              <RefreshCcwIcon className="w-4 h-4 mr-2" />
-              Reset Board
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => onProgressDialogOpenChange?.(false)}
-            >
-              Close
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </nav>
   );
 }

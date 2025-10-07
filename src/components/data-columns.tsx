@@ -1,8 +1,9 @@
 import type { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown, PenToolIcon } from "lucide-react";
+import { ArrowUpDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { Link } from "react-router-dom";
+import TryButton from "./try-button";
 
 export type ListItem = {
   id: number;
@@ -52,7 +53,7 @@ export const columns: ColumnDef<ListItem>[] = [
     cell: ({ row }) => (
       <div className="flex flex-col cursor-pointer max-w-[120px] sm:max-w-none">
         <Link
-          to={`/whiteboard/${row.original.slug}`}
+          to={`/interview/${row.original.slug}`}
           className="text-ellipsis overflow-hidden"
         >
           <div className="font-medium text-xs sm:text-sm leading-tight sm:leading-normal truncate">
@@ -136,16 +137,7 @@ export const columns: ColumnDef<ListItem>[] = [
     size: 60,
     cell: ({ row }) => (
       <div className="flex justify-center">
-        <Link to={`/interview/${row.original.slug}`}>
-          <Button
-            variant="outline"
-            size="sm"
-            className="cursor-pointer h-7 sm:h-8 px-2 sm:px-3 text-xs sm:text-sm"
-          >
-            <PenToolIcon className="h-3 w-3 sm:h-4 sm:w-4" />
-            <span className="hidden sm:inline ml-1">Try !!</span>
-          </Button>
-        </Link>
+        <TryButton slug={row.original.slug} />
       </div>
     ),
   },
