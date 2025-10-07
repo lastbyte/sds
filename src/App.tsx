@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="flex h-svh w-full flex-col items-start">
       <Navigation />
-      <ScrollArea className="flex w-full h-full flex-1 flex-col items-center pt-15 relative">
+      <ScrollArea className="flex w-full h-full flex-1 flex-col items-center pt-15">
         <Routes>
           {/* Define your routes here */}
           <Route path="/discover" element={<Discover />} />

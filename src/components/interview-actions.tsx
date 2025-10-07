@@ -8,12 +8,14 @@ import { PromptBox } from "./prompt-box";
 import { Button } from "./ui/button";
 import { ButtonGroup } from "./ui/button-group";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "./ui/dialog";
+import useMobile from "@/hooks/use-mobile";
 
 export default function InterviewActions() {
 
     const interviewState = useSelector((state: RootState) => state.interview);
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
+    const mobile = useMobile();
     return (<>
     {/* Evaluation Dialog - separate from dropdown */}
         <Dialog
@@ -135,8 +137,10 @@ export default function InterviewActions() {
             </DialogFooter>
           </DialogContent>
         </Dialog>
-        <div className="absolute bottom-4 right-4 z-[999]">
-          <ButtonGroup className="bg-secondary text-secondary-foreground rounded-sm">
+        <div className={`absolute ${mobile ? "bottom-20 right-0" : "right-4 bottom-4"} z-10`}>
+          <ButtonGroup className="bg-secondary text-secondary-foreground rounded-sm"
+          orientation={mobile ? "vertical" : "horizontal"}
+          >
             <Tooltip>
               <TooltipTrigger className="cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm ">
                   <EyeIcon className="h-4 w-4" onClick={() => dispatch(setConfirmViewSolution(true))} />

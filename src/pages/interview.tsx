@@ -53,7 +53,7 @@ export default function Interview() {
   }
 
   return (
-    <div className="w-full whiteboard relative">
+    <div className="w-full whiteboard">
       <InterviewActions />
       <div style={{ height: "calc(100vh - 60px)" }}>
           <div className="w-full h-full">
