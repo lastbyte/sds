@@ -1,5 +1,5 @@
 import { useInterviewState } from "@/contexts/interview-context";
-import { LockOpenIcon } from "lucide-react";
+import { FileTextIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
@@ -16,11 +16,13 @@ export default function TryButton({ slug }: { slug: string }) {
     <Link to={`/whiteboard/${slug}`} onClick={handleClick}>
       <Button
         variant="outline"
-        size="sm"
-        className="cursor-pointer h-7 sm:h-8 px-2 sm:px-3 text-xs sm:text-sm"
+        className="cursor-pointer text-xs sm:text-sm"
+        asChild
       >
-        <LockOpenIcon className="h-3 w-3 sm:h-4 sm:w-4" />
-        <span className="hidden sm:inline ml-1">Solution</span>
+        <div className="flex items-center">
+          <FileTextIcon className="h-4 w-4 sm:h-3 sm:w-3" />
+        <span className="hidden sm:text-sm sm:inline ml-1">Solution</span>
+        </div>
       </Button>
     </Link>
   );

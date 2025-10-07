@@ -49,26 +49,22 @@ export const columns: ColumnDef<ListItem>[] = [
       );
     },
     minSize: 120,
-    maxSize: 300,
     cell: ({ row }) => (
-      <div className="flex flex-col cursor-pointer max-w-[120px] sm:max-w-none">
+      <div className="flex flex-col cursor-pointer">
         <Link
           to={`/interview/${row.original.slug}`}
-          className="text-ellipsis overflow-hidden"
         >
-          <div className="font-medium text-xs sm:text-sm leading-tight sm:leading-normal truncate">
+          <div className="font-medium text-xs sm:text-sm truncate">
             {row.getValue("title") as string}
           </div>
-          <Tooltip>
-            <TooltipTrigger>
-              <div className="text-gray-600 cursor-pointer text-xs sm:text-sm line-clamp-1 truncate">
+          <Tooltip delayDuration={100}>
+            <TooltipTrigger className="w-full">
+              <div className="text-gray-600 cursor-pointer text-xs sm:text-sm truncate">
                 {row.original.description as string}
               </div>
             </TooltipTrigger>
-            <TooltipContent className="max-w-[200px] sm:max-w-[300px]">
-              <div className="h-fit w-full text-xs sm:text-sm">
-                {row.original.description as string}
-              </div>
+            <TooltipContent className="text-center text-xs sm:text-sm w-[220px]">
+              {row.original.description as string}
             </TooltipContent>
           </Tooltip>
         </Link>

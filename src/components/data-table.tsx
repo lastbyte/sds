@@ -141,7 +141,7 @@ export function DataTable() {
             size="sm"
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
-            className="h-8 sm:h-9 text-xs sm:text-sm px-2 sm:px-3"
+            className="h-8 sm:h-9 text-xs sm:text-sm px-2 sm:px-3 cursor-pointer"
           >
             <span className="hidden sm:inline">Previous</span>
             <span className="sm:hidden">Prev</span>
@@ -151,7 +151,7 @@ export function DataTable() {
             size="sm"
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
-            className="h-8 sm:h-9 text-xs sm:text-sm px-2 sm:px-3"
+            className="h-8 sm:h-9 text-xs sm:text-sm px-2 sm:px-3 cursor-pointer"
           >
             Next
           </Button>
