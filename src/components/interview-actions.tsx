@@ -47,6 +47,7 @@ export default function InterviewActions() {
         onOpenChange={(open) => dispatch(setConfirmEvaluation(open))}
       >
         <DialogContent>
+          <DialogTitle>Evaluate Your Solution</DialogTitle>
           <DialogHeader>
             <div className="flex flex-col gap-4 p-2">
               <p>
