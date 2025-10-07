@@ -2,12 +2,22 @@
   "title": "System Design Store",
   "description": "A curated collection of system design examples to help you master the art of designing scalable systems. Perfect for interview preparation and learning best practices.",
   "questions": {
+    "choosing-the-right-database": {
+      "id": 0,
+      "title": "Choosing the Right Database",
+      "slug": "choosing-the-right-database",
+      "description": "Understand the differences between SQL and NoSQL databases, and learn how to choose the right one for your application.",
+      "difficulty": "easy",
+      "practice": false,
+      "tags": ["Databases", "SQL", "NoSQL"]
+    },
     "design-uber": {
       "id": 1,
       "title": "Design Uber",
       "slug": "design-uber",
       "description": "Design a ride-sharing application like Uber, focusing on real-time location tracking, ride matching, and fare calculation.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Scalability", "Real-time Systems", "Microservices"]
     },
     "design-twitter": {
@@ -16,6 +26,7 @@
       "slug": "design-twitter",
       "description": "Design a social media platform like Twitter, focusing on tweet storage, user timelines, and follower relationships.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["Database Design", "Caching", "Load Balancing"]
     },
     "design-url-shortener": {
@@ -24,6 +35,7 @@
       "slug": "design-url-shortener",
       "description": "Design a URL shortening service like Bitly, focusing on generating short URLs, redirecting, and analytics tracking.",
       "difficulty": "easy",
+      "practice": true,
       "tags": ["Hashing", "Database Design", "Scalability"]
     },
     "design-online-bookstore": {
@@ -32,6 +44,7 @@
       "slug": "design-online-bookstore",
       "description": "Design an online bookstore like Amazon, focusing on product catalog, user reviews, and order processing.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["E-commerce", "Database Design", "Microservices"]
     },
     "design-chat-application": {
@@ -40,6 +53,7 @@
       "slug": "design-chat-application",
       "description": "Design a real-time chat application like WhatsApp, focusing on message delivery, user presence, and group chats.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Real-time Systems", "WebSockets", "Scalability"]
     },
     "design-video-streaming-service": {
@@ -48,6 +62,7 @@
       "slug": "design-video-streaming-service",
       "description": "Design a video streaming platform like Netflix, focusing on content delivery, user recommendations, and subscription management.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Content Delivery Networks", "Database Design", "Scalability"]
     },
     "design-file-storage-service": {
@@ -56,6 +71,7 @@
       "slug": "design-file-storage-service",
       "description": "Design a cloud file storage service like Dropbox, focusing on file upload/download, synchronization, and sharing.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["File Systems", "Database Design", "Scalability"]
     },
     "design-news-feed-system": {
@@ -64,6 +80,7 @@
       "slug": "design-news-feed-system",
       "description": "Design a news feed system like Facebook, focusing on content ranking, user interactions, and real-time updates.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Algorithms", "Real-time Systems", "Scalability"]
     },
     "design-online-payment-system": {
@@ -72,6 +89,7 @@
       "slug": "design-online-payment-system",
       "description": "Design an online payment system like PayPal, focusing on transaction processing, fraud detection, and security.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Security", "Database Design", "Scalability"]
     },
     "design-ride-sharing-application": {
@@ -80,6 +98,7 @@
       "slug": "design-ride-sharing-application",
       "description": "Design a ride-sharing application like Lyft, focusing on driver-rider matching, fare calculation, and real-time tracking.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Scalability", "Real-time Systems", "Microservices"]
     },
     "design-food-delivery-service": {
@@ -88,6 +107,7 @@
       "slug": "design-food-delivery-service",
       "description": "Design a food delivery service like DoorDash, focusing on restaurant management, order processing, and delivery tracking.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["E-commerce", "Database Design", "Microservices"]
     },
     "design-collaborative-document-editing-tool": {
@@ -96,6 +116,7 @@
       "slug": "design-collaborative-document-editing-tool",
       "description": "Design a collaborative document editing tool like Google Docs, focusing on real-time collaboration, version control, and access management.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Real-time Systems", "WebSockets", "Scalability"]
     },
     "design-job-search-platform": {
@@ -104,6 +125,7 @@
       "slug": "design-job-search-platform",
       "description": "Design a job search platform like LinkedIn, focusing on job listings, user profiles, and recommendation algorithms.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["Database Design", "Algorithms", "Scalability"]
     },
     "design-travel-booking-system": {
@@ -112,6 +134,7 @@
       "slug": "design-travel-booking-system",
       "description": "Design a travel booking system like Expedia, focusing on flight/hotel search, booking management, and payment processing.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["E-commerce", "Database Design", "Microservices"]
     },
     "design-fitness-tracking-application": {
@@ -120,6 +143,7 @@
       "slug": "design-fitness-tracking-application",
       "description": "Design a fitness tracking application like Strava, focusing on activity tracking, social features, and data visualization.",
       "difficulty": "easy",
+      "practice": true,
       "tags": ["Mobile Development", "Database Design", "APIs"]
     },
     "design-music-streaming-service": {
@@ -128,6 +152,7 @@
       "slug": "design-music-streaming-service",
       "description": "Design a music streaming service like Spotify, focusing on music catalog, user playlists, and recommendation algorithms.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Content Delivery Networks", "Database Design", "Scalability"]
     },
     "design-real-time-collaboration-platform": {
@@ -136,6 +161,7 @@
       "slug": "design-real-time-collaboration-platform",
       "description": "Design a real-time collaboration platform like Slack, focusing on messaging, file sharing, and integrations.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Real-time Systems", "WebSockets", "Scalability"]
     },
     "design-online-learning-platform": {
@@ -144,6 +170,7 @@
       "slug": "design-online-learning-platform",
       "description": "Design an online learning platform like Coursera, focusing on course management, user progress tracking, and content delivery.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["E-learning", "Database Design", "Microservices"]
     },
     "design-social-media-analytics-tool": {
@@ -152,6 +179,7 @@
       "slug": "design-social-media-analytics-tool",
       "description": "Design a social media analytics tool like Hootsuite, focusing on data aggregation, sentiment analysis, and reporting.",
       "difficulty": "medium",
+      "practice": true,
       "tags": ["Data Analysis", "APIs", "Scalability"]
     },
     "design-virtual-event-platform": {
@@ -160,6 +188,7 @@
       "slug": "design-virtual-event-platform",
       "description": "Design a virtual event platform like Hopin, focusing on event management, live streaming, and attendee engagement.",
       "difficulty": "hard",
+      "practice": true,
       "tags": ["Real-time Systems", "WebRTC", "Scalability"]
     }
   }

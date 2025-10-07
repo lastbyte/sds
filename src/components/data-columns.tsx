@@ -1,15 +1,23 @@
 import type { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import ViewActionButton from "./view-action-button";
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogTrigger,
+} from "./ui/dialog";
+import CellTitle from "./cell-title";
 
 export type ListItem = {
   id: number;
   slug: string;
   title: string;
   description: string;
+  practice?: boolean;
   difficulty: "easy" | "medium" | "hard";
   tags: string[];
 };
@@ -29,7 +37,7 @@ export const columns: ColumnDef<ListItem>[] = [
   },
   {
     accessorKey: "title",
-    header: ({ column }) => {
+    header: function ({ column }) {
       return (
         <div className="flex items-center gap-1 sm:gap-2">
           <span className="text-xs sm:text-sm">Title</span>
@@ -49,25 +57,7 @@ export const columns: ColumnDef<ListItem>[] = [
       );
     },
     minSize: 120,
-    cell: ({ row }) => (
-      <div className="flex flex-col cursor-pointer">
-        <Link to={`/interview/${row.original.slug}`}>
-          <div className="font-medium text-xs sm:text-sm truncate">
-            {row.getValue("title") as string}
-          </div>
-          <Tooltip delayDuration={100}>
-            <TooltipTrigger className="w-full">
-              <div className="text-gray-600 cursor-pointer text-xs sm:text-sm truncate">
-                {row.original.description as string}
-              </div>
-            </TooltipTrigger>
-            <TooltipContent className="text-center text-xs sm:text-sm w-[220px]">
-              {row.original.description as string}
-            </TooltipContent>
-          </Tooltip>
-        </Link>
-      </div>
-    ),
+    cell: CellTitle,
   },
   {
     accessorKey: "difficulty",
@@ -108,7 +98,7 @@ export const columns: ColumnDef<ListItem>[] = [
 
       return (
         <div className="text-left flex flex-wrap justify-start gap-1 sm:gap-2 h-fit items-center">
-          {tags.slice(0, 2).map((tag) => (
+          {tags.slice(0, 4).map((tag) => (
             <span
               key={tag}
               className="h-fit inline-block rounded-full bg-gray-200 dark:bg-gray-700 px-1 sm:px-1.5 py-0.5 text-[8px] sm:text-[10px] font-medium text-gray-700 dark:text-gray-200"
@@ -116,23 +106,13 @@ export const columns: ColumnDef<ListItem>[] = [
               {tag}
             </span>
           ))}
-          {tags.length > 2 && (
+          {tags.length > 4 && (
             <span className="text-[8px] sm:text-[10px] text-gray-500">
-              +{tags.length - 2}
+              +{tags.length - 4}
             </span>
           )}
         </div>
       );
     },
-  },
-  {
-    accessorKey: "try",
-    header: () => <div className="text-center"></div>,
-    size: 60,
-    cell: ({ row }) => (
-      <div className="flex justify-center">
-        <ViewActionButton slug={row.original.slug} />
-      </div>
-    ),
   },
 ];
