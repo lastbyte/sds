@@ -24,7 +24,6 @@ import {
   EyeIcon,
   EyeOffIcon,
   MenuIcon,
-  MoonIcon,
   MoonStarIcon,
   SunIcon,
 } from "lucide-react";
