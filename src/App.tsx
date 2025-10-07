@@ -7,10 +7,11 @@ import Interview from "./pages/interview";
 import Whiteboard from "./pages/whiteboard";
 
 function App() {
+
   return (
     <div className="flex h-svh w-full flex-col items-start">
       <Navigation />
-      <div className="flex w-full h-full flex-1 flex-col items-center pt-15 overflow-scroll">
+      <div className={`flex w-full h-full flex-1 flex-col items-center pt-15 overflow-scroll}`}>
         <Routes>
           {/* Define your routes here */}
           <Route path="/discover" element={<Discover />} />

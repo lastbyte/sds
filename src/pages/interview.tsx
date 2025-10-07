@@ -53,10 +53,10 @@ export default function Interview() {
   }
 
   return (
-    <div className="w-full whiteboard">
+    <div className="w-full">
       <InterviewActions />
-      <div style={{ height: "calc(100vh - 60px)" }}>
-          <div className="w-full h-full">
+      <div>
+          <div className="w-full whiteboard">
             <Excalidraw
               key={`blank-${params.slug}-${theme}-${interviewState.refreshCounter}`}
               theme={theme === "dark" ? "dark" : "light"}
