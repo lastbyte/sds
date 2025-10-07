@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/input-group";
 import { Code2Icon, CopyIcon } from "lucide-react";
 import { useState } from "react";
-import { Button } from "./ui/button";
 
 export function PromptBox() {
   const [copied, setCopied] = useState(false);
