@@ -30,6 +30,7 @@ import {
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { PromptBox } from "./prompt-box";
 
 interface NavigationProps {
   showSolutionButton?: boolean;
@@ -165,44 +166,19 @@ export default function Navigation({
             <DialogTitle>
               Follow the following steps to evaluate your solution.
             </DialogTitle>
-            <DialogDescription>
-              <ul className="list-disc ml-5">
+            <DialogContent>
+              <ul className="list-decimal flex flex-col gap-4 py-2">
+                <li>Export your design as an image.</li>
                 <li>
-                  Break down your solution into key components or modules.
+                  <PromptBox />
                 </li>
                 <li>
-                  For each component, list out the technologies and tools you
-                  would use.
-                </li>
-                <li>
-                  Consider scalability: How would your design handle increased
-                  load?
-                </li>
-                <li>
-                  Think about reliability: What mechanisms would you implement
-                  to ensure uptime?
-                </li>
-                <li>
-                  Address maintainability: How easy would it be to update or
-                  modify your design in the future?
-                </li>
-                <li>
-                  Reflect on security: What measures would you take to protect
-                  data and ensure user privacy?
+                  Copy the prompt above and attach the image into any AI tool
+                  like ChatGPT, Bing Chat, or Claude.
                 </li>
               </ul>
-            </DialogDescription>
+            </DialogContent>
           </DialogHeader>
-          <DialogFooter>
-            <Button
-              variant="default"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => onEvaluationDialogOpenChange?.(false)}
-            >
-              Close
-            </Button>
-          </DialogFooter>
         </DialogContent>
       </Dialog>
     </nav>

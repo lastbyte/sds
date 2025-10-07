@@ -7,6 +7,7 @@ import "./App.css";
 import Interview from "./pages/interview";
 import { useInterviewState } from "./contexts/interview-context";
 import { ScrollArea } from "./components/ui/scroll-area";
+import { Toaster } from "./components/ui/sonner";
 
 function App() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="flex h-svh w-full flex-col items-start relative">
+      <Toaster />
       <Navigation
         showSolutionButton={isInterviewPage}
         isSolution={state.isSolution}
