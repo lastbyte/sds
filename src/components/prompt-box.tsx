@@ -5,15 +5,14 @@ import {
   InputGroupText,
   InputGroupTextarea,
 } from "@/components/ui/input-group";
+import { PROMPT } from "@/lib/prompt";
 import { Code2Icon, CopyIcon } from "lucide-react";
 import { useState } from "react";
 
 export function PromptBox() {
   const [copied, setCopied] = useState(false);
   const handleCopy = () => {
-    navigator.clipboard.writeText(
-      "Design a URL shortening service like bit.ly"
-    );
+    navigator.clipboard.writeText(PROMPT);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -23,7 +22,7 @@ export function PromptBox() {
         <InputGroupTextarea
           id="textarea-code-32"
           disabled
-          defaultValue="Design a URL shortening service like bit.ly"
+          defaultValue={PROMPT}
           className="min-h-[200px]"
         />
         <InputGroupAddon align="block-start" className="border-b">
@@ -31,9 +30,12 @@ export function PromptBox() {
             <Code2Icon />
             prompt
           </InputGroupText>
-          <InputGroupButton className="ml-auto cursor-pointer gap-2 flex flex-row" onClick={handleCopy}>
-              {copied && <span className="text-sm text-green-500"> copied </span>}
-              <CopyIcon />
+          <InputGroupButton
+            className="ml-auto cursor-pointer gap-2 flex flex-row"
+            onClick={handleCopy}
+          >
+            {copied && <span className="text-sm text-green-500"> copied </span>}
+            <CopyIcon />
           </InputGroupButton>
         </InputGroupAddon>
       </InputGroup>

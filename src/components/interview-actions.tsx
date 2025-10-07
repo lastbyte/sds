@@ -50,19 +50,21 @@ export default function InterviewActions() {
           <DialogHeader>
             <div className="flex flex-col gap-4 p-2">
               <p>
-                Use the prompt below to evaluate your solution. You can copy
-                it to your clipboard and paste it into the AI model of your
-                choice.
+                Use the prompt below to evaluate your solution. You can copy it
+                to your clipboard and paste it into the AI model of your choice.
               </p>
               <p>
                 You can also modify the prompt to better suit your needs. The
                 more specific you are, the better the evaluation will be.
               </p>
-              <Alert>
-                <CheckCircle2Icon className="text-orange-400" />
-                <AlertTitle>Don't forget to attach the image to the prompt</AlertTitle>
+              <Alert variant="default">
+                <CheckCircle2Icon />
+                <AlertTitle>
+                  Don't forget to attach the image to the prompt
+                </AlertTitle>
                 <AlertDescription>
-                  You can export the board as an image using the Excalidraw menu (top-left hamburger menu)
+                  You can export the board as an image using the Excalidraw menu
+                  (top-left hamburger menu)
                 </AlertDescription>
               </Alert>
               <PromptBox />
