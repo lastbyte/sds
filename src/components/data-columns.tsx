@@ -1,5 +1,5 @@
 import type { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown } from "lucide-react";
+import { ArrowUpDown, PenToolIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { Link } from "react-router-dom";
@@ -114,5 +114,19 @@ export const columns: ColumnDef<ListItem>[] = [
         </div>
       );
     },
+  },
+  {
+    accessorKey: "try",
+    header: () => <div className="text-center"></div>,
+    size: 75,
+    cell: ({ row }) => (
+      <div className="flex justify-center">
+        <Link to={`/interview/${row.original.slug}`}>
+          <Button variant="outline" size="sm" className="cursor-pointer">
+            <PenToolIcon /> Try !!
+          </Button>
+        </Link>
+      </div>
+    ),
   },
 ];

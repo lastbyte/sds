@@ -3,6 +3,12 @@
   height: calc(100vh - 64px);
 }
 
+.root {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+}
+
 .logo {
   font-family: "Saira Condensed", sans-serif;
   font-size: 1.5rem;
