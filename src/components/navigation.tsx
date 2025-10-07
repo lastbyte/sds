@@ -65,10 +65,17 @@ export default function Navigation({
         </Link>
       </div>
       <div className="flex flex-row gap-4 items-center">
+        <Link
+          to="https://github.com/lastbyte/sds"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SiGithub size={32} className="cursor-pointer" />
+        </Link>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button size="icon-sm" className="cursor-pointer">
-              <MenuIcon size={20} />
+            <Button variant={"secondary"} className="cursor-pointer">
+              <MenuIcon />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
@@ -145,14 +152,6 @@ export default function Navigation({
             )}
           </DropdownMenuContent>
         </DropdownMenu>
-
-        <Link
-          to="https://github.com/lastbyte/sds"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SiGithub size={32} className="cursor-pointer" />
-        </Link>
       </div>
 
       {/* Evaluation Dialog - separate from dropdown */}
