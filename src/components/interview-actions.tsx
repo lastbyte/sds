@@ -3,166 +3,34 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import useMobile from "@/hooks/use-mobile";
 import { useAppDispatch, type RootState } from "@/store";
 import {
-  incrementRefreshCounter,
-  setBoardData,
   setConfirmEvaluation,
   setConfirmResetBoard,
   setConfirmViewSolution,
 } from "@/store/slices/interview";
-import {
-  CheckCircle2Icon,
-  ClipboardCheckIcon,
-  EyeIcon,
-  RefreshCcwIcon,
-  RotateCcwIcon,
-} from "lucide-react";
+import { ClipboardCheckIcon, EyeIcon, RotateCcwIcon } from "lucide-react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { PromptBox } from "./prompt-box";
-import { Button } from "./ui/button";
+import EvaluationDialog from "./evaluation-dialog";
+import ResetBoardDialog from "./reset-board-dialog";
+import SolutionDialog from "./solution-dialog";
 import { ButtonGroup } from "./ui/button-group";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "./ui/dialog";
-import useMobile from "@/hooks/use-mobile";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 
 export default function InterviewActions() {
   const interviewState = useSelector((state: RootState) => state.interview);
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
   const mobile = useMobile();
   return (
     <>
       {/* Evaluation Dialog - separate from dropdown */}
-      <Dialog
-        open={interviewState.confirmEvaluation}
-        onOpenChange={(open) => dispatch(setConfirmEvaluation(open))}
-      >
-        <DialogContent>
-          <DialogTitle>Evaluate Your Solution</DialogTitle>
-          <DialogDescription>
-            Use the prompt below to evaluate your solution. You can copy it to
-            your clipboard and paste it into the AI model of your choice. You
-            can also modify the prompt to better suit your needs. The more
-            specific you are, the better the evaluation will be.
-          </DialogDescription>
-          <div className="flex flex-col gap-4 p-2">
-            <Alert variant="default">
-              <CheckCircle2Icon />
-              <AlertTitle className="h-fit">Important Note:</AlertTitle>
-              <AlertDescription>
-                Don't forget to attach the image to the prompt. <br />
-                You can export the board as an image using the Excalidraw menu
-                (top-left hamburger menu)
-              </AlertDescription>
-            </Alert>
-            <PromptBox />
-          </div>
-          <DialogFooter>
-            <Button
-              variant="outline"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => dispatch(setConfirmEvaluation(false))}
-            >
-              Close
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <EvaluationDialog />
 
       {/* clear progress Dialog -separate from dropdown */}
-      <Dialog
-        open={interviewState.confirmResetBoard}
-        onOpenChange={(open) => dispatch(setConfirmResetBoard(open))}
-      >
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Are you sure you want to reset the board?</DialogTitle>
-          </DialogHeader>
-          <DialogDescription>
-            This action will reset the board to its initial state. Once deleted,
-            your changes cannot be recovered.
-          </DialogDescription>
-          <DialogFooter>
-            <Button
-              variant="outline"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => dispatch(setConfirmResetBoard(false))}
-            >
-              Close
-            </Button>
-            <Button
-              variant="default"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => {
-                dispatch(
-                  setBoardData({
-                    elements: [],
-                    appState: {},
-                    files: {},
-                  })
-                );
-                dispatch(setConfirmResetBoard(false));
-                dispatch(incrementRefreshCounter());
-              }}
-            >
-              <RefreshCcwIcon className="w-4 h-4 mr-2" />
-              Reset Board
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <ResetBoardDialog />
 
       {/* clear progress Dialog -separate from dropdown */}
-      <Dialog
-        open={interviewState.confirmViewSolution}
-        onOpenChange={(open) => dispatch(setConfirmViewSolution(open))}
-      >
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>
-              Are you sure you want to view the solution?
-            </DialogTitle>
-          </DialogHeader>
-          <DialogDescription>
-            Viewing the solution will take away the fun of solving the problem
-            yourself. Are you sure you want to proceed?
-          </DialogDescription>
-          <DialogFooter>
-            <Button
-              variant="outline"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => dispatch(setConfirmViewSolution(false))}
-            >
-              Close
-            </Button>
-            <Button
-              variant="default"
-              size="sm"
-              className="cursor-pointer"
-              onClick={() => {
-                dispatch(setConfirmViewSolution(false));
-                navigate("/whiteboard/" + interviewState.slug);
-              }}
-            >
-              <EyeIcon className="w-4 h-4 mr-1" />
-              View Solution
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <SolutionDialog />
       <div
         className={`absolute ${
           mobile ? "bottom-20 right-0" : "right-4 bottom-4"
