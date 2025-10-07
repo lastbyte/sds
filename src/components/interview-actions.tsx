@@ -57,10 +57,9 @@ export default function InterviewActions() {
           <div className="flex flex-col gap-4 p-2">
             <Alert variant="default">
               <CheckCircle2Icon />
-              <AlertTitle>
-                Don't forget to attach the image to the prompt
-              </AlertTitle>
+              <AlertTitle className="h-fit">Important Note:</AlertTitle>
               <AlertDescription>
+                Don't forget to attach the image to the prompt. <br />
                 You can export the board as an image using the Excalidraw menu
                 (top-left hamburger menu)
               </AlertDescription>
