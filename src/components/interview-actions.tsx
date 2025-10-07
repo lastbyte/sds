@@ -41,33 +41,28 @@ export default function InterviewActions() {
           orientation={mobile ? "vertical" : "horizontal"}
         >
           <Tooltip>
-            <TooltipTrigger className="cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm ">
-              <EyeIcon
-                className="h-4 w-4"
+            <TooltipTrigger className="cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm">
+              <div
+                className="flex flex-row items-center gap-2 w-12 hover:w-20 transition-all duration-200 ease-in-out"
                 onClick={() => dispatch(setConfirmViewSolution(true))}
-              />
+              >
+                <EyeIcon className="h-4 w-4" />
+                <span className="truncate text-xs">Solution</span>
+              </div>
             </TooltipTrigger>
             <TooltipContent side="top" align="center">
               View Solution
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger className="cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm ">
-              <RotateCcwIcon
-                className="h-4 w-4"
-                onClick={() => dispatch(setConfirmResetBoard(true))}
-              />
-            </TooltipTrigger>
-            <TooltipContent side="top" align="center">
-              Reset Board
-            </TooltipContent>
-          </Tooltip>
-          <Tooltip>
-            <TooltipTrigger className="cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm ">
-              <ClipboardCheckIcon
-                className="h-4 w-4"
+            <TooltipTrigger className="flex flex-row items-center gap-2 cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm ">
+              <div
+                className="flex flex-row items-center gap-2 w-12 hover:w-20 transition-all duration-200 ease-in-out"
                 onClick={() => dispatch(setConfirmEvaluation(true))}
-              />
+              >
+                <ClipboardCheckIcon className="h-4 w-4" />
+                <span className="truncate text-xs">Evaluate</span>
+              </div>
             </TooltipTrigger>
             <TooltipContent side="top" align="center">
               {interviewState.confirmEvaluation
