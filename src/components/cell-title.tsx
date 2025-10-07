@@ -62,11 +62,15 @@ export default function CellTitle({ row }: CellContext<ListItem, unknown>) {
         <DialogFooter>
           <Button
             variant="outline"
+            className="cursor-pointer"
             onClick={() => navigate(`/whiteboard/${row.original.slug}`)}
           >
             View Solution
           </Button>
-          <Button onClick={() => navigate(`/interview/${row.original.slug}`)}>
+          <Button
+            className="cursor-pointer"
+            onClick={() => navigate(`/interview/${row.original.slug}`)}
+          >
             Try it out
           </Button>
         </DialogFooter>

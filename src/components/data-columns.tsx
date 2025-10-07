@@ -1,16 +1,7 @@
 import type { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
-import { Button } from "./ui/button";
-import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
-import ViewActionButton from "./view-action-button";
-import {
-  Dialog,
-  DialogContent,
-  DialogFooter,
-  DialogTrigger,
-} from "./ui/dialog";
 import CellTitle from "./cell-title";
+import { Button } from "./ui/button";
 
 export type ListItem = {
   id: number;
