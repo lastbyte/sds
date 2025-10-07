@@ -165,19 +165,27 @@ export default function Navigation({
             <DialogTitle>
               Follow the following steps to evaluate your solution.
             </DialogTitle>
-            <DialogContent>
-              <ul className="list-decimal flex flex-col gap-4 py-2">
-                <li>Export your design as an image.</li>
-                <li>
-                  <PromptBox />
-                </li>
-                <li>
-                  Copy the prompt above and attach the image into any AI tool
-                  like ChatGPT, Bing Chat, or Claude.
-                </li>
-              </ul>
-            </DialogContent>
+            <ul className="list-decimal flex flex-col gap-4 p-2">
+              <li>Export your design as an image.</li>
+              <li>
+                <PromptBox />
+              </li>
+              <li>
+                Copy the prompt above and attach the image into any AI tool like
+                ChatGPT, Bing Chat, or Claude.
+              </li>
+            </ul>
           </DialogHeader>
+          <DialogFooter>
+            <Button
+              variant="outline"
+              size="sm"
+              className="cursor-pointer"
+              onClick={() => onEvaluationDialogOpenChange?.(false)}
+            >
+              Close
+            </Button>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </nav>

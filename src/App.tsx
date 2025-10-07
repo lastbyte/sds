@@ -6,7 +6,7 @@ import "./index.css";
 import "./App.css";
 import Interview from "./pages/interview";
 import { useInterviewState } from "./contexts/interview-context";
-import { ScrollArea } from "./components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "./components/ui/scroll-area";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   const isInterviewPage = location.pathname.startsWith("/interview/");
 
   return (
-    <div className="flex h-svh w-full flex-col items-start relative">
+    <div className="flex h-svh w-full flex-col items-start">
       <Toaster />
       <Navigation
         showSolutionButton={isInterviewPage}
@@ -28,7 +28,7 @@ function App() {
         onDialogOpenChange={actions.setIsDialogOpen}
         onEvaluationDialogOpenChange={actions.setIsEvaluationDialogOpen}
       />
-      <ScrollArea className="flex w-full max-h-svh flex-1 flex-col items-center pt-15">
+      <ScrollArea className="flex w-full h-full flex-1 flex-col items-center pt-15">
         <Routes>
           {/* Define your routes here */}
           <Route path="/discover" element={<Discover />} />
