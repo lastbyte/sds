@@ -1,10 +1,7 @@
 import InterviewActions from "@/components/interview-actions";
 import { getBoardData } from "@/services/localstorage";
 import { useAppDispatch, type RootState } from "@/store";
-import {
-  setBoardData,
-  setSlug,
-} from "@/store/slices/interview";
+import { setBoardData, setSlug } from "@/store/slices/interview";
 import { Excalidraw } from "@excalidraw/excalidraw";
 import "@excalidraw/excalidraw/index.css";
 import type { ExcalidrawInitialDataState } from "@excalidraw/excalidraw/types";
@@ -39,7 +36,9 @@ export default function Interview() {
       files: NonNullable<ExcalidrawInitialDataState["files"]>
     ) => {
       if (!interviewState.slug) return;
-      dispatch(setBoardData(JSON.parse(JSON.stringify({elements, appState, files}))));
+      dispatch(
+        setBoardData(JSON.parse(JSON.stringify({ elements, appState, files })))
+      );
     },
     [dispatch, interviewState.slug]
   );
@@ -56,14 +55,14 @@ export default function Interview() {
     <div className="w-full">
       <InterviewActions />
       <div>
-          <div className="w-full whiteboard">
-            <Excalidraw
-              key={`blank-${params.slug}-${theme}-${interviewState.refreshCounter}`}
-              theme={theme === "dark" ? "dark" : "light"}
-              initialData={boardInitialData}
-              onChange={handleExcalidrawChange}
-            />
-          </div>
+        <div className="w-full whiteboard">
+          <Excalidraw
+            key={`blank-${params.slug}-${theme}-${interviewState.refreshCounter}`}
+            theme={theme === "dark" ? "dark" : "light"}
+            initialData={boardInitialData}
+            onChange={handleExcalidrawChange}
+          />
+        </div>
       </div>
     </div>
   );

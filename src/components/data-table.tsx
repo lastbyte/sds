@@ -38,7 +38,7 @@ export function DataTable() {
   const [rowSelection, setRowSelection] = React.useState({});
 
   const table = useReactTable({
-    data: data.questions as ListItem[],
+    data: Object.values(data.questions) as ListItem[],
     columns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,

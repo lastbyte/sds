@@ -1,8 +1,8 @@
 {
   "title": "System Design Store",
   "description": "A curated collection of system design examples to help you master the art of designing scalable systems. Perfect for interview preparation and learning best practices.",
-  "questions": [
-    {
+  "questions": {
+    "design-uber": {
       "id": 1,
       "title": "Design Uber",
       "slug": "design-uber",
@@ -10,7 +10,7 @@
       "difficulty": "hard",
       "tags": ["Scalability", "Real-time Systems", "Microservices"]
     },
-    {
+    "design-twitter": {
       "id": 2,
       "title": "Design Twitter",
       "slug": "design-twitter",
@@ -18,7 +18,7 @@
       "difficulty": "medium",
       "tags": ["Database Design", "Caching", "Load Balancing"]
     },
-    {
+    "design-url-shortener": {
       "id": 3,
       "title": "Design a URL Shortener",
       "slug": "design-url-shortener",
@@ -26,7 +26,7 @@
       "difficulty": "easy",
       "tags": ["Hashing", "Database Design", "Scalability"]
     },
-    {
+    "design-online-bookstore": {
       "id": 4,
       "title": "Design an Online Bookstore",
       "slug": "design-online-bookstore",
@@ -34,7 +34,7 @@
       "difficulty": "medium",
       "tags": ["E-commerce", "Database Design", "Microservices"]
     },
-    {
+    "design-chat-application": {
       "id": 5,
       "title": "Design a Chat Application",
       "slug": "design-chat-application",
@@ -42,7 +42,7 @@
       "difficulty": "hard",
       "tags": ["Real-time Systems", "WebSockets", "Scalability"]
     },
-    {
+    "design-video-streaming-service": {
       "id": 6,
       "title": "Design a Video Streaming Service",
       "slug": "design-video-streaming-service",
@@ -50,7 +50,7 @@
       "difficulty": "hard",
       "tags": ["Content Delivery Networks", "Database Design", "Scalability"]
     },
-    {
+    "design-file-storage-service": {
       "id": 7,
       "title": "Design a File Storage Service",
       "slug": "design-file-storage-service",
@@ -58,7 +58,7 @@
       "difficulty": "medium",
       "tags": ["File Systems", "Database Design", "Scalability"]
     },
-    {
+    "design-news-feed-system": {
       "id": 8,
       "title": "Design a News Feed System",
       "slug": "design-news-feed-system",
@@ -66,7 +66,7 @@
       "difficulty": "hard",
       "tags": ["Algorithms", "Real-time Systems", "Scalability"]
     },
-    {
+    "design-online-payment-system": {
       "id": 9,
       "title": "Design an Online Payment System",
       "slug": "design-online-payment-system",
@@ -74,7 +74,7 @@
       "difficulty": "hard",
       "tags": ["Security", "Database Design", "Scalability"]
     },
-    {
+    "design-ride-sharing-application": {
       "id": 10,
       "title": "Design a Ride-Sharing Application",
       "slug": "design-ride-sharing-application",
@@ -82,7 +82,7 @@
       "difficulty": "hard",
       "tags": ["Scalability", "Real-time Systems", "Microservices"]
     },
-    {
+    "design-food-delivery-service": {
       "id": 11,
       "title": "Design a Food Delivery Service",
       "slug": "design-food-delivery-service",
@@ -90,7 +90,7 @@
       "difficulty": "medium",
       "tags": ["E-commerce", "Database Design", "Microservices"]
     },
-    {
+    "design-collaborative-document-editing-tool": {
       "id": 12,
       "title": "Design a Collaborative Document Editing Tool",
       "slug": "design-collaborative-document-editing-tool",
@@ -98,7 +98,7 @@
       "difficulty": "hard",
       "tags": ["Real-time Systems", "WebSockets", "Scalability"]
     },
-    {
+    "design-job-search-platform": {
       "id": 13,
       "title": "Design a Job Search Platform",
       "slug": "design-job-search-platform",
@@ -106,7 +106,7 @@
       "difficulty": "medium",
       "tags": ["Database Design", "Algorithms", "Scalability"]
     },
-    {
+    "design-travel-booking-system": {
       "id": 14,
       "title": "Design a Travel Booking System",
       "slug": "design-travel-booking-system",
@@ -114,7 +114,7 @@
       "difficulty": "medium",
       "tags": ["E-commerce", "Database Design", "Microservices"]
     },
-    {
+    "design-fitness-tracking-application": {
       "id": 15,
       "title": "Design a Fitness Tracking Application",
       "slug": "design-fitness-tracking-application",
@@ -122,7 +122,7 @@
       "difficulty": "easy",
       "tags": ["Mobile Development", "Database Design", "APIs"]
     },
-    {
+    "design-music-streaming-service": {
       "id": 16,
       "title": "Design a Music Streaming Service",
       "slug": "design-music-streaming-service",
@@ -130,7 +130,7 @@
       "difficulty": "hard",
       "tags": ["Content Delivery Networks", "Database Design", "Scalability"]
     },
-    {
+    "design-real-time-collaboration-platform": {
       "id": 17,
       "title": "Design a Real-Time Collaboration Platform",
       "slug": "design-real-time-collaboration-platform",
@@ -138,7 +138,7 @@
       "difficulty": "hard",
       "tags": ["Real-time Systems", "WebSockets", "Scalability"]
     },
-    {
+    "design-online-learning-platform": {
       "id": 18,
       "title": "Design an Online Learning Platform",
       "slug": "design-online-learning-platform",
@@ -146,7 +146,7 @@
       "difficulty": "medium",
       "tags": ["E-learning", "Database Design", "Microservices"]
     },
-    {
+    "design-social-media-analytics-tool": {
       "id": 19,
       "title": "Design a Social Media Analytics Tool",
       "slug": "design-social-media-analytics-tool",
@@ -154,7 +154,7 @@
       "difficulty": "medium",
       "tags": ["Data Analysis", "APIs", "Scalability"]
     },
-    {
+    "design-virtual-event-platform": {
       "id": 20,
       "title": "Design a Virtual Event Platform",
       "slug": "design-virtual-event-platform",
@@ -162,5 +162,5 @@
       "difficulty": "hard",
       "tags": ["Real-time Systems", "WebRTC", "Scalability"]
     }
-  ]
+  }
 }

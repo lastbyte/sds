@@ -15,15 +15,17 @@ export function getBoardData(slug: string): ExcalidrawInitialDataState | null {
         // Ensure elements is an array
         elements: Array.isArray(jsonData.elements) ? jsonData.elements : [],
         // Ensure appState is an object
-        appState: jsonData.appState ? {
-          ...jsonData.appState,
-          collaborators: jsonData.appState.collaborators
-            ? new Map(Object.entries(jsonData.appState.collaborators))
-            : new Map(),
-        } : {
-          collaborators: new Map(),
-        },
-      }
+        appState: jsonData.appState
+          ? {
+              ...jsonData.appState,
+              collaborators: jsonData.appState.collaborators
+                ? new Map(Object.entries(jsonData.appState.collaborators))
+                : new Map(),
+            }
+          : {
+              collaborators: new Map(),
+            },
+      };
     } catch (error) {
       console.error("Error parsing board data:", error);
     }
