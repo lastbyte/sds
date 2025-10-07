@@ -1,11 +1,12 @@
 import { useInterviewState } from "@/contexts/interview-context";
+import useMobile from "@/hooks/use-mobile";
 import { FileTextIcon } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "./ui/button";
 
-export default function TryButton({ slug }: { slug: string }) {
+export default function ViewActionButton({ slug }: { slug: string }) {
   const { actions } = useInterviewState();
   const { setIsSolution } = actions;
+  const mobile = useMobile();
 
   const handleClick = () => {
     // Reset to drawing mode when navigating to interview
@@ -14,16 +15,10 @@ export default function TryButton({ slug }: { slug: string }) {
 
   return (
     <Link to={`/whiteboard/${slug}`} onClick={handleClick}>
-      <Button
-        variant="outline"
-        className="cursor-pointer text-xs sm:text-sm"
-        asChild
-      >
-        <div className="flex items-center">
-          <FileTextIcon className="h-4 w-4 sm:h-3 sm:w-3" />
-        <span className="hidden sm:text-sm sm:inline ml-1">Solution</span>
-        </div>
-      </Button>
+      <div className="flex items-center border-1 rounded-sm py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition cursor-pointer">
+        <FileTextIcon size={mobile ? 12 : 16} />
+        <span className="hidden sm:text-xs sm:inline ml-1">Solution</span>
+      </div>
     </Link>
   );
 }

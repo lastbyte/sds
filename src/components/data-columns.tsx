@@ -1,9 +1,9 @@
 import type { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
-import { Link } from "react-router-dom";
-import TryButton from "./try-button";
+import ViewActionButton from "./view-action-button";
 
 export type ListItem = {
   id: number;
@@ -51,9 +51,7 @@ export const columns: ColumnDef<ListItem>[] = [
     minSize: 120,
     cell: ({ row }) => (
       <div className="flex flex-col cursor-pointer">
-        <Link
-          to={`/interview/${row.original.slug}`}
-        >
+        <Link to={`/interview/${row.original.slug}`}>
           <div className="font-medium text-xs sm:text-sm truncate">
             {row.getValue("title") as string}
           </div>
@@ -133,7 +131,7 @@ export const columns: ColumnDef<ListItem>[] = [
     size: 60,
     cell: ({ row }) => (
       <div className="flex justify-center">
-        <TryButton slug={row.original.slug} />
+        <ViewActionButton slug={row.original.slug} />
       </div>
     ),
   },
