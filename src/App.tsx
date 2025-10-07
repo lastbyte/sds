@@ -26,6 +26,8 @@ function App() {
         isEvaluationDialogOpen={state.isEvaluationDialogOpen}
         onToggleSolution={actions.setIsSolution}
         onDialogOpenChange={actions.setIsDialogOpen}
+        onProgressDialogOpenChange={actions.setIsProgressDialogOpen}
+        isProgressDialogOpen={state.isProgressDialogOpen}
         onEvaluationDialogOpenChange={actions.setIsEvaluationDialogOpen}
       />
       <ScrollArea className="flex w-full h-full flex-1 flex-col items-center pt-15">

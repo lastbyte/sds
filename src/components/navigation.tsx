@@ -25,10 +25,11 @@ import {
   EyeOffIcon,
   MenuIcon,
   MoonStarIcon,
+  RefreshCcwIcon,
   SunIcon,
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { PromptBox } from "./prompt-box";
 
 interface NavigationProps {
@@ -36,6 +37,8 @@ interface NavigationProps {
   isSolution?: boolean;
   isDialogOpen?: boolean;
   isEvaluationDialogOpen?: boolean;
+  isProgressDialogOpen?: boolean;
+  onProgressDialogOpenChange?: (open: boolean) => void;
   onToggleSolution?: (show: boolean) => void;
   onDialogOpenChange?: (open: boolean) => void;
   onEvaluationDialogOpenChange?: (open: boolean) => void;
@@ -46,12 +49,15 @@ export default function Navigation({
   isSolution = false,
   isDialogOpen = false,
   isEvaluationDialogOpen = false,
+  isProgressDialogOpen = false,
+  onProgressDialogOpenChange,
   onToggleSolution,
   onEvaluationDialogOpenChange,
   onDialogOpenChange,
 }: NavigationProps) {
   const dispatch = useDispatch();
   const currentTheme = useSelector((state: RootState) => state.config.theme);
+  const params = useParams();
 
   const toggleTheme = () => {
     dispatch(setTheme(currentTheme === "light" ? "dark" : "light"));
@@ -181,6 +187,54 @@ export default function Navigation({
               size="sm"
               className="cursor-pointer"
               onClick={() => onEvaluationDialogOpenChange?.(false)}
+            >
+              Close
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* clear progress Dialog -separate from dropdown */}
+      <Dialog
+        open={isProgressDialogOpen}
+        onOpenChange={onProgressDialogOpenChange}
+      >
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>
+              Follow the following steps to evaluate your solution.
+            </DialogTitle>
+            <ul className="list-decimal flex flex-col gap-4 p-2">
+              <li>Export your design as an image.</li>
+              <li>
+                <PromptBox />
+              </li>
+              <li>
+                Copy the prompt above and attach the image into any AI tool like
+                ChatGPT, Bing Chat, or Claude.
+              </li>
+            </ul>
+          </DialogHeader>
+          <DialogFooter>
+            <Button
+              variant="outline"
+              size="sm"
+              className="cursor-pointer"
+              onClick={() => {
+                if (params.slug) {
+                  localStorage.removeItem(`whiteboard:${params.slug}`);
+                }
+                onProgressDialogOpenChange?.(false);
+              }}
+            >
+              <RefreshCcwIcon className="w-4 h-4 mr-2" />
+              Reset Board
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="cursor-pointer"
+              onClick={() => onProgressDialogOpenChange?.(false)}
             >
               Close
             </Button>
