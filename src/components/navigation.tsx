@@ -67,8 +67,8 @@ export default function Navigation({
       <div className="flex flex-row gap-4 items-center">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="sm">
-              <MenuIcon className="w-4 h-4" />
+            <Button size="icon-sm" className="cursor-pointer">
+              <MenuIcon size={20} />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
@@ -151,7 +151,7 @@ export default function Navigation({
           target="_blank"
           rel="noreferrer"
         >
-          <SiGithub size={20} className="cursor-pointer" />
+          <SiGithub size={32} className="cursor-pointer" />
         </Link>
       </div>
 
