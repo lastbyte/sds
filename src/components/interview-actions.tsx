@@ -48,29 +48,25 @@ export default function InterviewActions() {
       >
         <DialogContent>
           <DialogTitle>Evaluate Your Solution</DialogTitle>
-          <DialogHeader>
-            <div className="flex flex-col gap-4 p-2">
-              <p>
-                Use the prompt below to evaluate your solution. You can copy it
-                to your clipboard and paste it into the AI model of your choice.
-              </p>
-              <p>
-                You can also modify the prompt to better suit your needs. The
-                more specific you are, the better the evaluation will be.
-              </p>
-              <Alert variant="default">
-                <CheckCircle2Icon />
-                <AlertTitle>
-                  Don't forget to attach the image to the prompt
-                </AlertTitle>
-                <AlertDescription>
-                  You can export the board as an image using the Excalidraw menu
-                  (top-left hamburger menu)
-                </AlertDescription>
-              </Alert>
-              <PromptBox />
-            </div>
-          </DialogHeader>
+          <DialogDescription>
+            Use the prompt below to evaluate your solution. You can copy it to
+            your clipboard and paste it into the AI model of your choice. You
+            can also modify the prompt to better suit your needs. The more
+            specific you are, the better the evaluation will be.
+          </DialogDescription>
+          <div className="flex flex-col gap-4 p-2">
+            <Alert variant="default">
+              <CheckCircle2Icon />
+              <AlertTitle>
+                Don't forget to attach the image to the prompt
+              </AlertTitle>
+              <AlertDescription>
+                You can export the board as an image using the Excalidraw menu
+                (top-left hamburger menu)
+              </AlertDescription>
+            </Alert>
+            <PromptBox />
+          </div>
           <DialogFooter>
             <Button
               variant="outline"
