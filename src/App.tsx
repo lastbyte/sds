@@ -1,13 +1,13 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import Navigation from "./components/navigation";
-import Discover from "./pages/discover";
-import Whiteboard from "./pages/whiteboard";
-import "./index.css";
 import "./App.css";
-import Interview from "./pages/interview";
-import { useInterviewState } from "./contexts/interview-context";
-import { ScrollArea, ScrollBar } from "./components/ui/scroll-area";
+import Navigation from "./components/navigation";
+import { ScrollArea } from "./components/ui/scroll-area";
 import { Toaster } from "./components/ui/sonner";
+import { useInterviewState } from "./contexts/interview-context";
+import "./index.css";
+import Discover from "./pages/discover";
+import Interview from "./pages/interview";
+import Whiteboard from "./pages/whiteboard";
 
 function App() {
   const location = useLocation();
