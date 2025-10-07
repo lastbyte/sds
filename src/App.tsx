@@ -5,13 +5,14 @@ import "./index.css";
 import Discover from "./pages/discover";
 import Interview from "./pages/interview";
 import Whiteboard from "./pages/whiteboard";
+import { ScrollArea } from "./components/ui/scroll-area";
 
 function App() {
 
   return (
     <div className="flex h-svh w-full flex-col items-start">
       <Navigation />
-      <div className={`flex w-full h-full flex-1 flex-col items-center pt-15 overflow-scroll}`}>
+      <ScrollArea className={`flex w-full h-full flex-1 flex-col items-center pt-15 overflow-scroll}`}>
         <Routes>
           {/* Define your routes here */}
           <Route path="/discover" element={<Discover />} />
@@ -19,7 +20,7 @@ function App() {
           <Route path="/interview/:slug" element={<Interview />} />
           <Route path="/whiteboard/:slug" element={<Whiteboard />} />
         </Routes>
-      </div>
+      </ScrollArea>
     </div>
   );
 }
