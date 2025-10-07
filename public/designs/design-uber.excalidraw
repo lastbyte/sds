@@ -6,8 +6,8 @@
 		{
 			"id": "gDQcP3PZ",
 			"type": "text",
-			"x": -894,
-			"y": -450.15234375,
+			"x": -1340.8491342114646,
+			"y": -606.2915751424564,
 			"width": 209.4839324951172,
 			"height": 45,
 			"angle": 0,
@@ -19,17 +19,18 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"u5uvSOl3NTsbYff7f68Pc",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aI",
 			"roundness": null,
 			"seed": 626600697,
-			"version": 19,
-			"versionNonce": 918616249,
+			"version": 355,
+			"versionNonce": 2049788021,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"text": "Design Uber",
@@ -46,10 +47,10 @@
 		{
 			"id": "uliBj5wu",
 			"type": "text",
-			"x": -887,
-			"y": -392.15234375,
-			"width": 873.4393310546875,
-			"height": 50,
+			"x": -1333.8491342114646,
+			"y": -558.2915751424564,
+			"width": 1222.8154296875,
+			"height": 70,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -59,22 +60,23 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"u5uvSOl3NTsbYff7f68Pc",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aJ",
 			"roundness": null,
 			"seed": 1084725497,
-			"version": 238,
-			"versionNonce": 1282591575,
+			"version": 577,
+			"versionNonce": 8480091,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"text": "Uber is a rider sharing app, it allows users to book cab ride on demand, the platform also\nhas drivers who can accept/reject these request.",
 			"rawText": "Uber is a rider sharing app, it allows users to book cab ride on demand, the platform also\nhas drivers who can accept/reject these request.",
-			"fontSize": 20,
+			"fontSize": 28,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -84,98 +86,10 @@
 			"lineHeight": 1.25
 		},
 		{
-			"id": "JWYIBqXE",
-			"type": "text",
-			"x": -883,
-			"y": -295.15234375,
-			"width": 318.47186279296875,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
-			],
-			"frameId": null,
-			"index": "aK",
-			"roundness": null,
-			"seed": 997798713,
-			"version": 44,
-			"versionNonce": 24344985,
-			"isDeleted": false,
-			"boundElements": [],
-			"updated": 1759739633242,
-			"locked": false,
-			"text": "Functional requirements",
-			"rawText": "Functional requirements",
-			"fontSize": 28,
-			"fontFamily": 5,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Functional requirements",
-			"autoResize": true,
-			"lineHeight": 1.25,
-			"link": null
-		},
-		{
-			"id": "xA7mG2hdeG5hnh8tvdgru",
-			"type": "line",
-			"x": -879.30859375,
-			"y": -253.18359375,
-			"width": 315.70703125,
-			"height": 3.8984375,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
-			],
-			"frameId": null,
-			"index": "aL",
-			"roundness": {
-				"type": 2
-			},
-			"seed": 196877751,
-			"version": 110,
-			"versionNonce": 483215479,
-			"isDeleted": false,
-			"boundElements": [],
-			"updated": 1759739633242,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					315.70703125,
-					-3.8984375
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"polygon": false
-		},
-		{
 			"id": "FgtW_cWLsWvS3kDlohQPV",
 			"type": "line",
-			"x": -892.70703125,
-			"y": -404.16015625,
+			"x": -1339.5561654614646,
+			"y": -560.2993876424564,
 			"width": 212.31640625,
 			"height": 3.6015625,
 			"angle": 0,
@@ -187,19 +101,20 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"u5uvSOl3NTsbYff7f68Pc",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
-			"index": "aM",
+			"index": "aK",
 			"roundness": {
 				"type": 2
 			},
 			"seed": 6266935,
-			"version": 65,
-			"versionNonce": 1474485881,
+			"version": 401,
+			"versionNonce": 1320579541,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -220,12 +135,12 @@
 			"polygon": false
 		},
 		{
-			"id": "Rzh3cDkQ",
+			"id": "JWYIBqXE",
 			"type": "text",
-			"x": -878,
-			"y": -226.15234375,
-			"width": 750.719482421875,
-			"height": 250,
+			"x": -1339.2941360154105,
+			"y": -453.15972463154935,
+			"width": 409.4638366699219,
+			"height": 45,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -235,22 +150,113 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
+			],
+			"frameId": null,
+			"index": "aL",
+			"roundness": null,
+			"seed": 997798713,
+			"version": 371,
+			"versionNonce": 1937900027,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1759875633131,
+			"locked": false,
+			"text": "Functional requirements",
+			"rawText": "Functional requirements",
+			"fontSize": 36,
+			"fontFamily": 5,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Functional requirements",
+			"autoResize": true,
+			"lineHeight": 1.25,
+			"link": null
+		},
+		{
+			"id": "xA7mG2hdeG5hnh8tvdgru",
+			"type": "line",
+			"x": -1330.9544042702748,
+			"y": -395.4355406401449,
+			"width": 391.3412210884044,
+			"height": 3.8984375,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
+			],
+			"frameId": null,
+			"index": "aM",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 196877751,
+			"version": 511,
+			"versionNonce": 2131980085,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1759875633131,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					391.3412210884044,
+					-3.8984375
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
+			"polygon": false
+		},
+		{
+			"id": "Rzh3cDkQ",
+			"type": "text",
+			"x": -1333.1073295060144,
+			"y": -389.615991075413,
+			"width": 1051.0076904296875,
+			"height": 350,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aN",
 			"roundness": null,
 			"seed": 1443590423,
-			"version": 335,
-			"versionNonce": 822777273,
+			"version": 755,
+			"versionNonce": 1099303579,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739673362,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"text": "- a user (rider) should be able to book a ride from a source to a destination\n- a user (Driver) should be able to view these requests, they can choose to \n  accept/reject the ride request.\n\nout of scope :\n- different cab type support\n- ride reassignment\n- multi location ride\n\n",
 			"rawText": "- a user (rider) should be able to book a ride from a source to a destination\n- a user (Driver) should be able to view these requests, they can choose to \n  accept/reject the ride request.\n\nout of scope :\n- different cab type support\n- ride reassignment\n- multi location ride\n\n",
-			"fontSize": 20,
+			"fontSize": 28,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -262,10 +268,10 @@
 		{
 			"id": "w1kkaVM3",
 			"type": "text",
-			"x": -867.015625,
-			"y": 0.63671875,
-			"width": 374.6118469238281,
-			"height": 35,
+			"x": -1326.1449098989688,
+			"y": -80.49197380065277,
+			"width": 481.643798828125,
+			"height": 45,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -275,21 +281,22 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aO",
 			"roundness": null,
 			"seed": 1825939127,
-			"version": 125,
-			"versionNonce": 2027071321,
+			"version": 439,
+			"versionNonce": 162119829,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"locked": false,
 			"text": "Non-functional requirements",
 			"rawText": "Non-functional requirements",
-			"fontSize": 28,
+			"fontSize": 36,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -302,10 +309,10 @@
 		{
 			"id": "EpbjcIvqo_C9NBSNSysg8",
 			"type": "line",
-			"x": -870.2842885779025,
-			"y": 39.99084977615121,
-			"width": 372.9461816015957,
-			"height": 2.158361197544417,
+			"x": -1321.6086723352162,
+			"y": -21.84671439052056,
+			"width": 475.0115414096811,
+			"height": 3.1473666220414316,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -315,7 +322,8 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aP",
@@ -323,11 +331,11 @@
 				"type": 2
 			},
 			"seed": 611060951,
-			"version": 343,
-			"versionNonce": 814798519,
+			"version": 679,
+			"versionNonce": 255852347,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -336,8 +344,8 @@
 					0
 				],
 				[
-					372.9461816015957,
-					-2.158361197544417
+					475.0115414096811,
+					-3.1473666220414316
 				]
 			],
 			"lastCommittedPoint": null,
@@ -350,10 +358,10 @@
 		{
 			"id": "Xvn8p2Zu",
 			"type": "text",
-			"x": -868.5723510093466,
-			"y": 70.134149594375,
-			"width": 705.8812866210938,
-			"height": 99.37778175744077,
+			"x": -1326.5313128226605,
+			"y": -15.302966730028729,
+			"width": 994.69970703125,
+			"height": 140,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -363,22 +371,23 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aQ",
 			"roundness": null,
 			"seed": 1757734679,
-			"version": 527,
-			"versionNonce": 2123781177,
+			"version": 820,
+			"versionNonce": 70182389,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"text": "- low latency ride matching , < 1m should be either fulfilled | rejected\n- a ride should not be assinged to two drivers, we need high consistency\n  in ride assignment\n- the system should be highly available",
 			"rawText": "- low latency ride matching , < 1m should be either fulfilled | rejected\n- a ride should not be assinged to two drivers, we need high consistency\n  in ride assignment\n- the system should be highly available",
-			"fontSize": 19.875556351488154,
+			"fontSize": 28,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -390,10 +399,10 @@
 		{
 			"id": "kukHKuwz",
 			"type": "text",
-			"x": -869.6837038887084,
-			"y": 226.59560762940498,
-			"width": 179.85618591308594,
-			"height": 34.78222361510427,
+			"x": -1328.8706807707724,
+			"y": 161.7260666617288,
+			"width": 232.7399139404297,
+			"height": 45,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -403,21 +412,22 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aR",
 			"roundness": null,
 			"seed": 1096605175,
-			"version": 304,
-			"versionNonce": 466806743,
+			"version": 589,
+			"versionNonce": 1192386523,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"locked": false,
 			"text": "Core Entities",
 			"rawText": "Core Entities",
-			"fontSize": 27.825778892083417,
+			"fontSize": 36,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -430,10 +440,10 @@
 		{
 			"id": "-ppD2mvpMglCR3jK7DUue",
 			"type": "line",
-			"x": -868.6999234079119,
-			"y": 265.4490871153089,
-			"width": 180.46256430439377,
-			"height": 3.9989347111298863,
+			"x": -1319.6616718429098,
+			"y": 213.16366700690332,
+			"width": 222.6106788117055,
+			"height": 3.0923464053410044,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -443,7 +453,8 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aS",
@@ -451,11 +462,11 @@
 				"type": 2
 			},
 			"seed": 318911863,
-			"version": 364,
-			"versionNonce": 1829856537,
+			"version": 677,
+			"versionNonce": 833118037,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -464,8 +475,8 @@
 					0
 				],
 				[
-					180.46256430439377,
-					-3.9989347111298863
+					222.6106788117055,
+					-3.0923464053410044
 				]
 			],
 			"lastCommittedPoint": null,
@@ -478,10 +489,10 @@
 		{
 			"id": "2wCOg0XZ",
 			"type": "text",
-			"x": -865.5996854603209,
-			"y": 289.62562537419296,
-			"width": 92.1768798828125,
-			"height": 74.53333631808059,
+			"x": -1310.5944345008538,
+			"y": 219.44480049055682,
+			"width": 129.8919219970703,
+			"height": 105,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -491,22 +502,23 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"urktOI48BA3aQMnouR51D",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aT",
 			"roundness": null,
 			"seed": 1015805177,
-			"version": 355,
-			"versionNonce": 854971639,
+			"version": 667,
+			"versionNonce": 1661971579,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"text": "- user\n- ride\n- location",
 			"rawText": "- user\n- ride\n- location",
-			"fontSize": 19.875556351488154,
+			"fontSize": 28,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -518,10 +530,10 @@
 		{
 			"id": "hBqnmSGn",
 			"type": "text",
-			"x": -865.5996854603209,
-			"y": 407.65375795460545,
-			"width": 241.67221069335938,
-			"height": 34.78222361510427,
+			"x": -1337.149230148597,
+			"y": 357.4297389813551,
+			"width": 312.7319030761719,
+			"height": 45,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -531,22 +543,23 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"fvBkXhgLV60S3En2HofS_",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aU",
 			"roundness": null,
 			"seed": 1660057463,
-			"version": 303,
-			"versionNonce": 2142722553,
+			"version": 664,
+			"versionNonce": 1483451573,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"text": "API & Interfaces",
 			"rawText": "API & Interfaces",
-			"fontSize": 27.825778892083417,
+			"fontSize": 36,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -558,10 +571,10 @@
 		{
 			"id": "3hJEmsE33pQ8TbEattqOG",
 			"type": "line",
-			"x": -861.9410856182233,
-			"y": 442.16796786034683,
-			"width": 234.95336747586714,
-			"height": 2.605688841028718,
+			"x": -1341.7323421773074,
+			"y": 410.4126520221239,
+			"width": 321.8210105941828,
+			"height": 2.605688841028723,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -571,7 +584,8 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"fvBkXhgLV60S3En2HofS_",
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aV",
@@ -579,11 +593,11 @@
 				"type": 2
 			},
 			"seed": 1285190681,
-			"version": 416,
-			"versionNonce": 2105417239,
+			"version": 656,
+			"versionNonce": 1996121371,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -592,8 +606,8 @@
 					0
 				],
 				[
-					234.95336747586714,
-					-2.605688841028718
+					321.8210105941828,
+					-2.605688841028723
 				]
 			],
 			"lastCommittedPoint": null,
@@ -606,10 +620,10 @@
 		{
 			"id": "gKUarQGA",
 			"type": "text",
-			"x": -857.4316486035461,
-			"y": 492.77895352485166,
-			"width": 674.5859375,
-			"height": 571.4222451052844,
+			"x": -1346.0085700169116,
+			"y": 430.0309808143817,
+			"width": 950.5997314453125,
+			"height": 805,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -619,22 +633,22 @@
 			"roughness": 1,
 			"opacity": 100,
 			"groupIds": [
-				"jZ1gNXfEWEVy0WENEEDHp"
+				"ZFn18dtEvLibV8lZTUoR4"
 			],
 			"frameId": null,
 			"index": "aW",
 			"roundness": null,
 			"seed": 1907351671,
-			"version": 796,
-			"versionNonce": 931902169,
+			"version": 1133,
+			"versionNonce": 2139206843,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759739633242,
+			"updated": 1759875633131,
 			"link": null,
 			"locked": false,
 			"text": "- POST  /ride/estimate -> Partial<Ride>\n    body : {\n                source,\n                destination,\n                 ...\n            }\n\n- POST  /ride/book -> Ride\n    body : {\n        ride_id\n    }\n\n- PATCH  /ride/status -> 200 OK\n    body : {\n        ride_id,\n        status : 'created' | 'fulfilled' | 'on_pickup' | 'reached_source' | ...\n    }\n\n- POST  /location/update -> 200 OK\n    body : {\n        lat,\n        long,\n    }",
 			"rawText": "- POST  /ride/estimate -> Partial<Ride>\n    body : {\n                source,\n                destination,\n                 ...\n            }\n\n- POST  /ride/book -> Ride\n    body : {\n        ride_id\n    }\n\n- PATCH  /ride/status -> 200 OK\n    body : {\n        ride_id,\n        status : 'created' | 'fulfilled' | 'on_pickup' | 'reached_source' | ...\n    }\n\n- POST  /location/update -> 200 OK\n    body : {\n        lat,\n        long,\n    }",
-			"fontSize": 19.875556351488154,
+			"fontSize": 28,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -898,9 +912,9 @@
 			"id": "3D4sOG1KypFzMn7PcTrg5",
 			"type": "arrow",
 			"x": 106.76033866737976,
-			"y": 221.34848692054308,
+			"y": 221.34919394844076,
 			"width": 318.0583081830164,
-			"height": 52.377225649301494,
+			"height": 52.37780781456803,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -916,11 +930,11 @@
 				"type": 2
 			},
 			"seed": 1640686871,
-			"version": 99,
-			"versionNonce": 501857303,
+			"version": 102,
+			"versionNonce": 439886203,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759872593408,
+			"updated": 1759875370948,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -930,7 +944,7 @@
 				],
 				[
 					318.0583081830164,
-					-52.377225649301494
+					-52.37780781456803
 				]
 			],
 			"lastCommittedPoint": null,
@@ -952,9 +966,9 @@
 			"id": "R9BHhNfSqqJh6ZM13gAQP",
 			"type": "arrow",
 			"x": 288.6126687710232,
-			"y": 558.9225517206833,
+			"y": 558.9283384346832,
 			"width": 136.09793286660693,
-			"height": 161.33233560882036,
+			"height": 161.33342197975077,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -970,11 +984,11 @@
 				"type": 2
 			},
 			"seed": 1622526231,
-			"version": 215,
-			"versionNonce": 2057101911,
+			"version": 218,
+			"versionNonce": 529809083,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759872593415,
+			"updated": 1759875370950,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -984,7 +998,7 @@
 				],
 				[
 					136.09793286660693,
-					-161.33233560882036
+					-161.33342197975077
 				]
 			],
 			"lastCommittedPoint": null,
@@ -1154,8 +1168,8 @@
 				"type": 2
 			},
 			"seed": 496864439,
-			"version": 80,
-			"versionNonce": 1357609111,
+			"version": 83,
+			"versionNonce": 1677331451,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -1163,7 +1177,7 @@
 					"id": "IspskMQa"
 				}
 			],
-			"updated": 1759872593423,
+			"updated": 1759875370951,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1195,7 +1209,7 @@
 			"id": "IspskMQa",
 			"type": "text",
 			"x": 700.9160180532326,
-			"y": -31.342873342319304,
+			"y": -31.342873342319308,
 			"width": 292.31988525390625,
 			"height": 35,
 			"angle": 0,
@@ -1309,10 +1323,10 @@
 		{
 			"id": "JS7IYg0pIR4u7ES__TRlx",
 			"type": "arrow",
-			"x": 1179.9609448126785,
-			"y": -219.46537999125758,
-			"width": 5.629020779447046,
-			"height": 169.5843491430262,
+			"x": 1179.9632174513263,
+			"y": -219.46537999125763,
+			"width": 5.627513688928502,
+			"height": 169.58434914302615,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -1328,8 +1342,8 @@
 				"type": 2
 			},
 			"seed": 835576793,
-			"version": 140,
-			"versionNonce": 616136407,
+			"version": 143,
+			"versionNonce": 347965755,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -1337,7 +1351,7 @@
 					"id": "AGPrViQj"
 				}
 			],
-			"updated": 1759872593424,
+			"updated": 1759875370952,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1346,8 +1360,8 @@
 					0
 				],
 				[
-					5.629020779447046,
-					-169.5843491430262
+					5.627513688928502,
+					-169.58434914302615
 				]
 			],
 			"lastCommittedPoint": null,
@@ -1368,7 +1382,7 @@
 		{
 			"id": "AGPrViQj",
 			"type": "text",
-			"x": 1096.8999911257079,
+			"x": 1096.914900549201,
 			"y": -339.2575545627707,
 			"width": 171.7239227294922,
 			"height": 70,
@@ -1519,10 +1533,10 @@
 		{
 			"id": "MHtLU1CATKr-Pqk1POilv",
 			"type": "arrow",
-			"x": 1318.0743887379974,
-			"y": -152.40704773173033,
-			"width": 223.62068468851908,
-			"height": 126.50520648224918,
+			"x": 1318.0743887379972,
+			"y": -152.4059989690374,
+			"width": 223.62084847774645,
+			"height": 126.5054845218479,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -1538,8 +1552,8 @@
 				"type": 2
 			},
 			"seed": 2130450105,
-			"version": 131,
-			"versionNonce": 821136375,
+			"version": 134,
+			"versionNonce": 407808475,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -1547,7 +1561,7 @@
 					"id": "4LBrDIn2"
 				}
 			],
-			"updated": 1759872593425,
+			"updated": 1759875370952,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1556,8 +1570,8 @@
 					0
 				],
 				[
-					223.62068468851908,
-					-126.50520648224918
+					223.62084847774645,
+					-126.5054845218479
 				]
 			],
 			"lastCommittedPoint": null,
@@ -1578,8 +1592,8 @@
 		{
 			"id": "4LBrDIn2",
 			"type": "text",
-			"x": 1286.579974039784,
-			"y": -233.16883321390125,
+			"x": 1286.5808835532184,
+			"y": -233.15880167293852,
 			"width": 286.60784912109375,
 			"height": 35,
 			"angle": 0,
@@ -1698,9 +1712,9 @@
 			"id": "eceP2iUaIH-zBbsbBQL-N",
 			"type": "arrow",
 			"x": 1322.6909872759304,
-			"y": -101.73305376385905,
-			"width": 404.7384375547765,
-			"height": 99.85229958393637,
+			"y": -101.73348676381414,
+			"width": 404.73843925052097,
+			"height": 99.85250386691212,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -1716,8 +1730,8 @@
 				"type": 2
 			},
 			"seed": 1245333241,
-			"version": 75,
-			"versionNonce": 1357575447,
+			"version": 78,
+			"versionNonce": 439531131,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -1725,7 +1739,7 @@
 					"id": "tpPiyiFp"
 				}
 			],
-			"updated": 1759872593427,
+			"updated": 1759875370953,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1734,8 +1748,8 @@
 					0
 				],
 				[
-					404.7384375547765,
-					99.85229958393637
+					404.73843925052097,
+					99.85250386691212
 				]
 			],
 			"lastCommittedPoint": null,
@@ -1756,8 +1770,8 @@
 		{
 			"id": "tpPiyiFp",
 			"type": "text",
-			"x": 1439.4222376214257,
-			"y": -69.30161452384442,
+			"x": 1439.4222521617335,
+			"y": -69.30721974252721,
 			"width": 171.27590942382812,
 			"height": 35,
 			"angle": 0,
@@ -1928,10 +1942,10 @@
 		{
 			"id": "l_BNZdk3OmlM1k4RzjJlr",
 			"type": "arrow",
-			"x": 665.6638005147018,
-			"y": 250.5865393610959,
-			"width": 413.7152777777777,
-			"height": 119.13980984875076,
+			"x": 665.6638005147017,
+			"y": 250.5865293021599,
+			"width": 413.71527777777806,
+			"height": 119.13971242273621,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -1947,8 +1961,8 @@
 				"type": 2
 			},
 			"seed": 701650231,
-			"version": 124,
-			"versionNonce": 1197726551,
+			"version": 127,
+			"versionNonce": 1470993339,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -1956,7 +1970,7 @@
 					"id": "pDU8g51J"
 				}
 			],
-			"updated": 1759872593427,
+			"updated": 1759875370953,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1965,8 +1979,8 @@
 					0
 				],
 				[
-					413.7152777777777,
-					119.13980984875076
+					413.71527777777806,
+					119.13971242273621
 				]
 			],
 			"lastCommittedPoint": null,
@@ -1987,8 +2001,8 @@
 		{
 			"id": "pDU8g51J",
 			"type": "text",
-			"x": 752.5134972038836,
-			"y": 292.657613212455,
+			"x": 752.5134972038835,
+			"y": 292.6563877257974,
 			"width": 240.01588439941406,
 			"height": 35,
 			"angle": 0,
@@ -2044,8 +2058,8 @@
 				"type": 2
 			},
 			"seed": 694553591,
-			"version": 96,
-			"versionNonce": 4083127,
+			"version": 99,
+			"versionNonce": 980210843,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -2053,7 +2067,7 @@
 					"id": "0EN9VMg1"
 				}
 			],
-			"updated": 1759872593423,
+			"updated": 1759875370951,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2122,10 +2136,10 @@
 		{
 			"id": "RfBxWt0DvJNro6Er0hzk5",
 			"type": "arrow",
-			"x": 1368.257116486924,
-			"y": 368.98440207139134,
-			"width": 401.4756953842775,
-			"height": 248.74132002673485,
+			"x": 1368.2571164869237,
+			"y": 368.98440207139123,
+			"width": 401.47569538427774,
+			"height": 248.74132002673466,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -2141,8 +2155,8 @@
 				"type": 2
 			},
 			"seed": 2144678231,
-			"version": 73,
-			"versionNonce": 1008351799,
+			"version": 76,
+			"versionNonce": 690761499,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -2150,7 +2164,7 @@
 					"id": "hoNu5Dz8"
 				}
 			],
-			"updated": 1759872593427,
+			"updated": 1759875370953,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2159,8 +2173,8 @@
 					0
 				],
 				[
-					401.4756953842775,
-					-248.74132002673485
+					401.47569538427774,
+					-248.74132002673466
 				]
 			],
 			"lastCommittedPoint": null,
@@ -2181,8 +2195,8 @@
 		{
 			"id": "hoNu5Dz8",
 			"type": "text",
-			"x": 1418.4390254583593,
-			"y": 209.61374205802397,
+			"x": 1418.4390254583595,
+			"y": 209.61374205802386,
 			"width": 301.11187744140625,
 			"height": 70,
 			"angle": 0,
@@ -2319,8 +2333,8 @@
 				"type": 2
 			},
 			"seed": 1410723255,
-			"version": 294,
-			"versionNonce": 924604535,
+			"version": 297,
+			"versionNonce": 1171874907,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -2328,7 +2342,7 @@
 					"id": "9yFcPBTI"
 				}
 			],
-			"updated": 1759872593427,
+			"updated": 1759875370953,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2520,9 +2534,9 @@
 			"id": "rqSikfjIVb1fxayXc_-l-",
 			"type": "arrow",
 			"x": 657.807897736924,
-			"y": 527.8819715158396,
+			"y": 527.8819715158397,
 			"width": 454.38368055555577,
-			"height": 178.97135416666686,
+			"height": 178.97135416666652,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -2538,8 +2552,8 @@
 				"type": 2
 			},
 			"seed": 1967679257,
-			"version": 58,
-			"versionNonce": 1304164311,
+			"version": 61,
+			"versionNonce": 1862557243,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -2547,7 +2561,7 @@
 					"id": "8pxrsqAM"
 				}
 			],
-			"updated": 1759872593428,
+			"updated": 1759875370955,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2557,7 +2571,7 @@
 				],
 				[
 					454.38368055555577,
-					178.97135416666686
+					178.97135416666652
 				]
 			],
 			"lastCommittedPoint": null,
@@ -2617,9 +2631,9 @@
 			"id": "CzyD_5PLt5VNFz-Z2HygP",
 			"type": "arrow",
 			"x": 1385.444616486925,
-			"y": 720.585365931164,
-			"width": 306.02491156849806,
-			"height": 51.68335137419467,
+			"y": 720.5852433977176,
+			"width": 306.02489531944116,
+			"height": 51.6833036682641,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -2635,8 +2649,8 @@
 				"type": 2
 			},
 			"seed": 1798830329,
-			"version": 121,
-			"versionNonce": 777774775,
+			"version": 124,
+			"versionNonce": 573196699,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -2644,7 +2658,7 @@
 					"id": "jp6IGdJn"
 				}
 			],
-			"updated": 1759872593428,
+			"updated": 1759875370954,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2653,8 +2667,8 @@
 					0
 				],
 				[
-					306.02491156849806,
-					-51.68335137419467
+					306.02489531944116,
+					-51.6833036682641
 				]
 			],
 			"lastCommittedPoint": null,
@@ -2675,8 +2689,8 @@
 		{
 			"id": "jp6IGdJn",
 			"type": "text",
-			"x": 1484.8652070296682,
-			"y": 659.7448754092933,
+			"x": 1484.8650997350926,
+			"y": 659.7435971450603,
 			"width": 107.18392944335938,
 			"height": 70,
 			"angle": 0,
@@ -2751,10 +2765,10 @@
 		{
 			"id": "dfJZElaP",
 			"type": "text",
-			"x": 25.781325366639294,
-			"y": 1195.9306685260683,
-			"width": 1090.959228515625,
-			"height": 475,
+			"x": -302.4901941197106,
+			"y": 1250.6297817210118,
+			"width": 1527.3431396484375,
+			"height": 665,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -2770,16 +2784,16 @@
 			"index": "b0J",
 			"roundness": null,
 			"seed": 1514497113,
-			"version": 1104,
-			"versionNonce": 1810626807,
+			"version": 1195,
+			"versionNonce": 1955353525,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759740264947,
+			"updated": 1759875699290,
 			"link": null,
 			"locked": false,
 			"text": "\n- location DB\n    - Quad-tree (postgres + postGIS)\n        - we can use an relational db which supports Quad-trees\n        - this will be efficient enough for low-medium scale operations\n        - For heave traffic this will become a bottleneck\n            - we need to reindex the quad-tree with every location update\n            - we can introduce batching , but it will create latency issues \n              the location DB will have stale data for the batch duration\n    - geohashing\n        - we can use geo-hashing if we are building it for a very large scale\n        - no reindexing on location updates.\n        - supports range queries.\n\n- Primary DB (user, rides data)\n    - postgres DB\n        - a relational db is a good choice here since the data is very relational in nature\n        - as DB grows we can introduce sharding (location (country, region etc.)  can be a key for the partition)\n        ",
 			"rawText": "\n- location DB\n    - Quad-tree (postgres + postGIS)\n        - we can use an relational db which supports Quad-trees\n        - this will be efficient enough for low-medium scale operations\n        - For heave traffic this will become a bottleneck\n            - we need to reindex the quad-tree with every location update\n            - we can introduce batching , but it will create latency issues \n              the location DB will have stale data for the batch duration\n    - geohashing\n        - we can use geo-hashing if we are building it for a very large scale\n        - no reindexing on location updates.\n        - supports range queries.\n\n- Primary DB (user, rides data)\n    - postgres DB\n        - a relational db is a good choice here since the data is very relational in nature\n        - as DB grows we can introduce sharding (location (country, region etc.)  can be a key for the partition)\n        ",
-			"fontSize": 20,
+			"fontSize": 28,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -2791,10 +2805,10 @@
 		{
 			"id": "o5kKyTT7",
 			"type": "text",
-			"x": 36.76455077859691,
-			"y": 1175.499161234095,
-			"width": 385.25177001953125,
-			"height": 35,
+			"x": -297.11052633091845,
+			"y": 1218.9920352198083,
+			"width": 495.32379150390625,
+			"height": 45,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -2810,16 +2824,16 @@
 			"index": "b0K",
 			"roundness": null,
 			"seed": 1054941335,
-			"version": 147,
-			"versionNonce": 2081407511,
+			"version": 310,
+			"versionNonce": 1890629275,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759740264947,
+			"updated": 1759875688080,
 			"link": null,
 			"locked": false,
 			"text": "How do we store the data ?",
 			"rawText": "How do we store the data ?",
-			"fontSize": 28,
+			"fontSize": 36,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -2831,10 +2845,10 @@
 		{
 			"id": "mCCnaKuYjvL0_vsMaTzDz",
 			"type": "line",
-			"x": 37.00625323011741,
-			"y": 1214.3012490792075,
-			"width": 369.4784525164898,
-			"height": 0.06042561288018078,
+			"x": -295.22910599984584,
+			"y": 1275.1419116187658,
+			"width": 496.235773814047,
+			"height": 1.6431098270568327,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -2852,11 +2866,11 @@
 				"type": 2
 			},
 			"seed": 240280855,
-			"version": 208,
-			"versionNonce": 589129527,
+			"version": 414,
+			"versionNonce": 293424373,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759740264947,
+			"updated": 1759875698585,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2865,8 +2879,8 @@
 					0
 				],
 				[
-					369.4784525164898,
-					-0.06042561288018078
+					496.235773814047,
+					-1.6431098270568327
 				]
 			],
 			"lastCommittedPoint": null,
@@ -3001,9 +3015,9 @@
 		{
 			"id": "VrfU8lSuPaLf6yfUWf5r_",
 			"type": "arrow",
-			"x": 1138.4224646799041,
-			"y": 471.58700040590355,
-			"width": 271.9653135990628,
+			"x": 1138.4224646799046,
+			"y": 471.58700040590367,
+			"width": 271.96531359906305,
 			"height": 467.05495809941084,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
@@ -3020,8 +3034,8 @@
 				"type": 2
 			},
 			"seed": 1067140537,
-			"version": 355,
-			"versionNonce": 1359491479,
+			"version": 358,
+			"versionNonce": 1803690235,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -3029,7 +3043,7 @@
 					"id": "hyzgx6P2"
 				}
 			],
-			"updated": 1759872593428,
+			"updated": 1759875370954,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3038,11 +3052,11 @@
 					0
 				],
 				[
-					-189.28515434097653,
-					319.4575968272073
+					-189.285154340977,
+					319.45759682720717
 				],
 				[
-					-271.9653135990628,
+					-271.96531359906305,
 					467.05495809941084
 				]
 			],
@@ -3121,8 +3135,8 @@
 				"type": 2
 			},
 			"seed": 351295545,
-			"version": 423,
-			"versionNonce": 1698489591,
+			"version": 429,
+			"versionNonce": 217243355,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -3130,7 +3144,7 @@
 					"id": "ru30V7VN"
 				}
 			],
-			"updated": 1759872593429,
+			"updated": 1759875370955,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3222,8 +3236,8 @@
 				"type": 2
 			},
 			"seed": 1967525145,
-			"version": 214,
-			"versionNonce": 1952656919,
+			"version": 220,
+			"versionNonce": 914901883,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -3231,7 +3245,7 @@
 					"id": "pfNmnEdI"
 				}
 			],
-			"updated": 1759872593429,
+			"updated": 1759875370955,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3380,10 +3394,10 @@
 		{
 			"id": "K0Bu740R",
 			"type": "text",
-			"x": 38.728218329040146,
-			"y": 1687.1521650849536,
-			"width": 416.1077880859375,
-			"height": 35,
+			"x": -292.1098160992178,
+			"y": 1951.8215933977426,
+			"width": 534.995849609375,
+			"height": 45,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -3399,16 +3413,16 @@
 			"index": "b0Z",
 			"roundness": null,
 			"seed": 1714937591,
-			"version": 283,
-			"versionNonce": 1617210903,
+			"version": 408,
+			"versionNonce": 1259328187,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759741354051,
+			"updated": 1759875724401,
 			"link": null,
 			"locked": false,
 			"text": "How does ride matching work ?",
 			"rawText": "How does ride matching work ?",
-			"fontSize": 28,
+			"fontSize": 36,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -3420,10 +3434,10 @@
 		{
 			"id": "KOZ2DneARfdhk1iCzmhEo",
 			"type": "line",
-			"x": 39.8862484357644,
-			"y": 1728.6773458920252,
-			"width": 404.25258392258456,
-			"height": 4.045957039541918,
+			"x": -290.95178599249357,
+			"y": 1998.3467742048142,
+			"width": 528.9709516829594,
+			"height": 1.7788688408568305,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -3441,11 +3455,11 @@
 				"type": 2
 			},
 			"seed": 258599191,
-			"version": 318,
-			"versionNonce": 99930935,
+			"version": 467,
+			"versionNonce": 815514459,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759741354051,
+			"updated": 1759875724401,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3454,8 +3468,8 @@
 					0
 				],
 				[
-					404.25258392258456,
-					-4.045957039541918
+					528.9709516829594,
+					-1.7788688408568305
 				]
 			],
 			"lastCommittedPoint": null,
@@ -3468,10 +3482,10 @@
 		{
 			"id": "frTtEQcN",
 			"type": "text",
-			"x": 42.94258175782602,
-			"y": 1739.5494471124,
-			"width": 586.1795654296875,
-			"height": 175,
+			"x": -294.2547063598254,
+			"y": 2025.292522769154,
+			"width": 820.651611328125,
+			"height": 245,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -3487,16 +3501,16 @@
 			"index": "b0b",
 			"roundness": null,
 			"seed": 208596375,
-			"version": 618,
-			"versionNonce": 209933399,
+			"version": 792,
+			"versionNonce": 748724219,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759741354051,
+			"updated": 1759875724401,
 			"link": null,
 			"locked": false,
 			"text": "- user requests for a ride based on estimate\n- ride matching service will check for drives in that location\n- a PN is sent to all the nearby drivers\n- Drivers accepts the ride\n    - ride matching service checks if the ride is still available\n    - if ride is available diver is matched to the ride\n    - else the request fails",
 			"rawText": "- user requests for a ride based on estimate\n- ride matching service will check for drives in that location\n- a PN is sent to all the nearby drivers\n- Drivers accepts the ride\n    - ride matching service checks if the ride is still available\n    - if ride is available diver is matched to the ride\n    - else the request fails",
-			"fontSize": 20,
+			"fontSize": 28,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -3508,10 +3522,10 @@
 		{
 			"id": "gOFjhUw9",
 			"type": "text",
-			"x": 45.057794782118435,
-			"y": 1962.4965075302082,
-			"width": 710.2757568359375,
-			"height": 35,
+			"x": -311.7874603060666,
+			"y": 2313.2483435630593,
+			"width": 913.211669921875,
+			"height": 45,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -3527,16 +3541,16 @@
 			"index": "b0e",
 			"roundness": null,
 			"seed": 531128375,
-			"version": 131,
-			"versionNonce": 1512697849,
+			"version": 313,
+			"versionNonce": 200909077,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759741357635,
+			"updated": 1759875769801,
 			"link": null,
 			"locked": false,
 			"text": "How do we get the updated location of the driver ?",
 			"rawText": "How do we get the updated location of the driver ?",
-			"fontSize": 28,
+			"fontSize": 36,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -3548,10 +3562,10 @@
 		{
 			"id": "ff92Thbhl_8u1t1N71JQH",
 			"type": "line",
-			"x": 45.81969899935791,
-			"y": 2002.045571603305,
-			"width": 707.8889707272258,
-			"height": 5.761312753817492,
+			"x": -311.0255560888271,
+			"y": 2357.797407636156,
+			"width": 906.489068229966,
+			"height": 2.4919704618441756,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -3569,11 +3583,11 @@
 				"type": 2
 			},
 			"seed": 816702841,
-			"version": 189,
-			"versionNonce": 322668761,
+			"version": 411,
+			"versionNonce": 1655617141,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759741357635,
+			"updated": 1759875769801,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3582,8 +3596,8 @@
 					0
 				],
 				[
-					707.8889707272258,
-					-5.761312753817492
+					906.489068229966,
+					-2.4919704618441756
 				]
 			],
 			"lastCommittedPoint": null,
@@ -3596,10 +3610,10 @@
 		{
 			"id": "5WOVl39I",
 			"type": "text",
-			"x": 51.45873082942097,
-			"y": 2012.9138821821427,
-			"width": 908.139404296875,
-			"height": 125,
+			"x": -305.76321101070204,
+			"y": 2373.365999459405,
+			"width": 1265.49267578125,
+			"height": 174.2157871010836,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffffff",
@@ -3615,16 +3629,16 @@
 			"index": "b0g",
 			"roundness": null,
 			"seed": 1741796823,
-			"version": 431,
-			"versionNonce": 1818691001,
+			"version": 676,
+			"versionNonce": 1088036821,
 			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1759741357635,
+			"updated": 1759875769801,
 			"link": null,
 			"locked": false,
 			"text": "for keeping the driver location updated in our system we can pool the current location \nof the driver every X seconds\nthe client app of the driver makes an API call to the location service will the latest location\nand the DB is updated with the location.\nWe will only pool location of drives who are active (i.e. on duty)",
 			"rawText": "for keeping the driver location updated in our system we can pool the current location \nof the driver every X seconds\nthe client app of the driver makes an API call to the location service will the latest location\nand the DB is updated with the location.\nWe will only pool location of drives who are active (i.e. on duty)",
-			"fontSize": 20,
+			"fontSize": 27.874525936173377,
 			"fontFamily": 5,
 			"textAlign": "left",
 			"verticalAlign": "top",
@@ -3636,8 +3650,8 @@
 		{
 			"id": "Tua2IktE",
 			"type": "text",
-			"x": -800.3239883708771,
-			"y": 2426.807990259775,
+			"x": -1461.4209822140647,
+			"y": 2585.431856708546,
 			"width": 311.57989501953125,
 			"height": 90,
 			"angle": 0,
@@ -3648,16 +3662,18 @@
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"groupIds": [],
+			"groupIds": [
+				"S2ZXJdOxMMzFIx5kkWuoe"
+			],
 			"frameId": null,
-			"index": "b0h",
+			"index": "b0gV",
 			"roundness": null,
 			"seed": 376215543,
-			"version": 65,
-			"versionNonce": 2106214679,
+			"version": 227,
+			"versionNonce": 383552475,
 			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1759872570798,
+			"boundElements": [],
+			"updated": 1759875783235,
 			"link": null,
 			"locked": false,
 			"text": "Video references:-\n",
@@ -3674,8 +3690,8 @@
 		{
 			"id": "9Lb81Izf",
 			"type": "embeddable",
-			"x": -827.6711998449518,
-			"y": 2544.145012156591,
+			"x": -1488.7681936881393,
+			"y": 2703.724308101306,
 			"width": 832.3513815322558,
 			"height": 468.1976521118939,
 			"angle": 0,
@@ -3686,24 +3702,64 @@
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"groupIds": [],
+			"groupIds": [
+				"S2ZXJdOxMMzFIx5kkWuoe"
+			],
 			"frameId": null,
-			"index": "b0j",
+			"index": "b0h",
 			"roundness": {
 				"type": 3
 			},
 			"seed": 167817273,
-			"version": 129,
-			"versionNonce": 1932061017,
+			"version": 298,
+			"versionNonce": 280254587,
 			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1759872588284,
+			"boundElements": [],
+			"updated": 1759875783235,
 			"link": "https://www.youtube.com/watch?v=lsKU38RKQSo",
 			"locked": false,
 			"scale": [
 				1,
 				1
 			]
+		},
+		{
+			"id": "Koda69of",
+			"type": "text",
+			"x": 1736.2389810803488,
+			"y": 1148.437959891181,
+			"width": 3078.503173828125,
+			"height": 2250,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffffff",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "b0s",
+			"roundness": null,
+			"seed": 369017051,
+			"version": 84,
+			"versionNonce": 1348820155,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1759876415766,
+			"link": null,
+			"locked": false,
+			"text": "\n\nDecision: Use PostgreSQL as primary DB, and Redis Geo for serving realtime location data\n\nAdvantages\n\n- PostgreSQL:\n  - Strong ACID compliance ensures data integrity and reliability for critical transactional data like bookings, payments, and user profiles.\n  - Relational data model supports complex queries, relationships, and business logic enforcement.\n  - Mature ecosystem and extensibility with features like JSON support and PostGIS for geospatial data if needed in the future.\n  - Durable, disk-based storage with write-ahead logging for crash recovery and data persistence.\n\n- Redis Geo:\n  - Ultra-low latency for real-time geospatial queries, ideal for finding nearby drivers and live location tracking.\n  - In-memory data store optimized for fast read/write operations and frequent updates.\n  - Simple and efficient radius and proximity queries for location-based matching.\n  - Supports very high throughput for concurrent location updates.\n\nDisadvantages\n\n- Redis Geo:\n  - Data stored in memory by default, which can be costly to scale and volatile unless persistence is explicitly configured.\n  - Limited geospatial capabilities compared to PostGIS in PostgreSQL — lacks complex spatial queries, geofencing, and routing.\n  - Not suitable for historical location data storage or audit trails due to transient in-memory nature.\n  - No native encryption at rest, raising potential compliance concerns.\n\n- Architecture Complexity:\n  - Managing two databases increases operational overhead in deployment, monitoring, and data synchronization.\n  - Ensuring consistency between user/transactional data in PostgreSQL and live location data in Redis requires careful design.\n\nSummary\n\nThis combination balances reliable, consistent storage for business-critical data with the performance needed for real-time location-based operations.\nPostgreSQL guarantees data integrity and complex querying capabilities, while Redis Geo provides the speed required for live driver location and efficient\nride matching. If advanced geospatial analytics or historical location data become necessary, augmenting with PostgreSQL PostGIS or periodic persistence\nfrom Redis to PostgreSQL can be considered.\n\nThis decision reflects industry best practices for ride-hailing and real-time location-driven applications, optimizing for both performance and reliability.\n\n\n\nSources\n[1] Redis Vs PostgreSQL - Key Differences https://airbyte.com/data-engineering-resources/redis-vs-postgresql\n[2] PostgreSQL: Advantages and Disadvantages in 2025 https://www.ralantech.com/resources/postgresql-advantages-and-disadvantages/\n[3] PostgreSQL Advantages and Disadvantages 2025 https://www.aalpha.net/blog/pros-and-cons-of-using-postgresql-for-application-development/\n[4] Redis vs Postgres | Svix Resources https://www.svix.com/resources/faq/redis-vs-postgres/\n[5] How to Implement Online Ride-hailing Business Using ... https://blog.stackademic.com/how-to-implement-online-ride-hailing-business-using-rediss-geo-data-type-df8196f17a0f\n[6] Redis vs. PostgreSQL: A Comprehensive Database ... https://www.sprinkledata.com/blogs/redis-vs-postgresql-comparing-two-powerful-database-technologies\n[7] Building High-Performance Apps with Redis, PostgreSQL ... https://dev.to/olymahmud/building-high-performance-apps-with-redis-postgresql-spring-boot-3m36\n",
+			"rawText": "\n\nDecision: Use PostgreSQL as primary DB, and Redis Geo for serving realtime location data\n\nAdvantages\n\n- PostgreSQL:\n  - Strong ACID compliance ensures data integrity and reliability for critical transactional data like bookings, payments, and user profiles.\n  - Relational data model supports complex queries, relationships, and business logic enforcement.\n  - Mature ecosystem and extensibility with features like JSON support and PostGIS for geospatial data if needed in the future.\n  - Durable, disk-based storage with write-ahead logging for crash recovery and data persistence.\n\n- Redis Geo:\n  - Ultra-low latency for real-time geospatial queries, ideal for finding nearby drivers and live location tracking.\n  - In-memory data store optimized for fast read/write operations and frequent updates.\n  - Simple and efficient radius and proximity queries for location-based matching.\n  - Supports very high throughput for concurrent location updates.\n\nDisadvantages\n\n- Redis Geo:\n  - Data stored in memory by default, which can be costly to scale and volatile unless persistence is explicitly configured.\n  - Limited geospatial capabilities compared to PostGIS in PostgreSQL — lacks complex spatial queries, geofencing, and routing.\n  - Not suitable for historical location data storage or audit trails due to transient in-memory nature.\n  - No native encryption at rest, raising potential compliance concerns.\n\n- Architecture Complexity:\n  - Managing two databases increases operational overhead in deployment, monitoring, and data synchronization.\n  - Ensuring consistency between user/transactional data in PostgreSQL and live location data in Redis requires careful design.\n\nSummary\n\nThis combination balances reliable, consistent storage for business-critical data with the performance needed for real-time location-based operations.\nPostgreSQL guarantees data integrity and complex querying capabilities, while Redis Geo provides the speed required for live driver location and efficient\nride matching. If advanced geospatial analytics or historical location data become necessary, augmenting with PostgreSQL PostGIS or periodic persistence\nfrom Redis to PostgreSQL can be considered.\n\nThis decision reflects industry best practices for ride-hailing and real-time location-driven applications, optimizing for both performance and reliability.\n\n\n\nSources\n[1] Redis Vs PostgreSQL - Key Differences https://airbyte.com/data-engineering-resources/redis-vs-postgresql\n[2] PostgreSQL: Advantages and Disadvantages in 2025 https://www.ralantech.com/resources/postgresql-advantages-and-disadvantages/\n[3] PostgreSQL Advantages and Disadvantages 2025 https://www.aalpha.net/blog/pros-and-cons-of-using-postgresql-for-application-development/\n[4] Redis vs Postgres | Svix Resources https://www.svix.com/resources/faq/redis-vs-postgres/\n[5] How to Implement Online Ride-hailing Business Using ... https://blog.stackademic.com/how-to-implement-online-ride-hailing-business-using-rediss-geo-data-type-df8196f17a0f\n[6] Redis vs. PostgreSQL: A Comprehensive Database ... https://www.sprinkledata.com/blogs/redis-vs-postgresql-comparing-two-powerful-database-technologies\n[7] Building High-Performance Apps with Redis, PostgreSQL ... https://dev.to/olymahmud/building-high-performance-apps-with-redis-postgresql-spring-boot-3m36\n",
+			"fontSize": 36,
+			"fontFamily": 5,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "\n\nDecision: Use PostgreSQL as primary DB, and Redis Geo for serving realtime location data\n\nAdvantages\n\n- PostgreSQL:\n  - Strong ACID compliance ensures data integrity and reliability for critical transactional data like bookings, payments, and user profiles.\n  - Relational data model supports complex queries, relationships, and business logic enforcement.\n  - Mature ecosystem and extensibility with features like JSON support and PostGIS for geospatial data if needed in the future.\n  - Durable, disk-based storage with write-ahead logging for crash recovery and data persistence.\n\n- Redis Geo:\n  - Ultra-low latency for real-time geospatial queries, ideal for finding nearby drivers and live location tracking.\n  - In-memory data store optimized for fast read/write operations and frequent updates.\n  - Simple and efficient radius and proximity queries for location-based matching.\n  - Supports very high throughput for concurrent location updates.\n\nDisadvantages\n\n- Redis Geo:\n  - Data stored in memory by default, which can be costly to scale and volatile unless persistence is explicitly configured.\n  - Limited geospatial capabilities compared to PostGIS in PostgreSQL — lacks complex spatial queries, geofencing, and routing.\n  - Not suitable for historical location data storage or audit trails due to transient in-memory nature.\n  - No native encryption at rest, raising potential compliance concerns.\n\n- Architecture Complexity:\n  - Managing two databases increases operational overhead in deployment, monitoring, and data synchronization.\n  - Ensuring consistency between user/transactional data in PostgreSQL and live location data in Redis requires careful design.\n\nSummary\n\nThis combination balances reliable, consistent storage for business-critical data with the performance needed for real-time location-based operations.\nPostgreSQL guarantees data integrity and complex querying capabilities, while Redis Geo provides the speed required for live driver location and efficient\nride matching. If advanced geospatial analytics or historical location data become necessary, augmenting with PostgreSQL PostGIS or periodic persistence\nfrom Redis to PostgreSQL can be considered.\n\nThis decision reflects industry best practices for ride-hailing and real-time location-driven applications, optimizing for both performance and reliability.\n\n\n\nSources\n[1] Redis Vs PostgreSQL - Key Differences https://airbyte.com/data-engineering-resources/redis-vs-postgresql\n[2] PostgreSQL: Advantages and Disadvantages in 2025 https://www.ralantech.com/resources/postgresql-advantages-and-disadvantages/\n[3] PostgreSQL Advantages and Disadvantages 2025 https://www.aalpha.net/blog/pros-and-cons-of-using-postgresql-for-application-development/\n[4] Redis vs Postgres | Svix Resources https://www.svix.com/resources/faq/redis-vs-postgres/\n[5] How to Implement Online Ride-hailing Business Using ... https://blog.stackademic.com/how-to-implement-online-ride-hailing-business-using-rediss-geo-data-type-df8196f17a0f\n[6] Redis vs. PostgreSQL: A Comprehensive Database ... https://www.sprinkledata.com/blogs/redis-vs-postgresql-comparing-two-powerful-database-technologies\n[7] Building High-Performance Apps with Redis, PostgreSQL ... https://dev.to/olymahmud/building-high-performance-apps-with-redis-postgresql-spring-boot-3m36\n",
+			"autoResize": true,
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -3723,10 +3779,10 @@
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
 		"currentItemFrameRole": null,
-		"scrollX": 2201.704117241713,
-		"scrollY": -300.87486957267845,
+		"scrollX": 1427.8226287397404,
+		"scrollY": 48.111374816465016,
 		"zoom": {
-			"value": 0.249397
+			"value": 0.23
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
