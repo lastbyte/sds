@@ -51,7 +51,7 @@ export default function Whiteboard() {
   }
 
   return (
-    <div className="w-full whiteboard">
+    <div className="w-full whiteboard" style={{ height: "calc(100vh - 60px)" }}>
       {initialData === null ? (
         <div className="w-full h-full flex items-center justify-center">
           <div className="text-4xl font-saira">
