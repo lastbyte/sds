@@ -43,7 +43,7 @@ export default function InterviewActions() {
           <Tooltip>
             <TooltipTrigger className="cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm">
               <div
-                className="flex flex-row items-center gap-2 w-12 md:w-20 hover:w-20 transition-all duration-200 ease-in-out"
+                className="flex flex-row items-center gap-2 w-12 md:w-20 active:w-20 focus:w-20 hover:w-20 transition-all duration-200 ease-in-out"
                 onClick={() => dispatch(setConfirmViewSolution(true))}
               >
                 <EyeIcon className="h-4 w-4" />
@@ -57,7 +57,7 @@ export default function InterviewActions() {
           <Tooltip>
             <TooltipTrigger className="flex flex-row items-center gap-2 cursor-pointer p-2 px-3 first:rounded-tl-sm first:rounded-bl-sm last:rounded-tr-sm last:rounded-br-sm ">
               <div
-                className="flex flex-row items-center gap-2 w-12 md:w-20 hover:w-20 transition-all duration-200 ease-in-out"
+                className="flex flex-row items-center gap-2 w-12 md:w-20 active:w-20 focus:w-20 hover:w-20 transition-all duration-200 ease-in-out"
                 onClick={() => dispatch(setConfirmEvaluation(true))}
               >
                 <ClipboardCheckIcon className="h-4 w-4" />
