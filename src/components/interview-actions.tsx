@@ -7,10 +7,9 @@ import useMobile from "@/hooks/use-mobile";
 import { useAppDispatch, type RootState } from "@/store";
 import {
   setConfirmEvaluation,
-  setConfirmResetBoard,
   setConfirmViewSolution,
 } from "@/store/slices/interview";
-import { ClipboardCheckIcon, EyeIcon, RotateCcwIcon } from "lucide-react";
+import { ClipboardCheckIcon, EyeIcon } from "lucide-react";
 import { useSelector } from "react-redux";
 import EvaluationDialog from "./evaluation-dialog";
 import ResetBoardDialog from "./reset-board-dialog";
