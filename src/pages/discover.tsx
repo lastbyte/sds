@@ -1,5 +1,6 @@
 import { DataTable } from "@/components/data-table";
 import data from "@/assets/meta.json";
+import OpenTopicDialog from "@/components/open-topic-dialog";
 
 export default function Discover() {
   return (
@@ -12,6 +13,7 @@ export default function Discover() {
           {data.description}
         </p>
       </div>
+      <OpenTopicDialog />
       <DataTable />
     </div>
   );

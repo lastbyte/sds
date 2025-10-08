@@ -3,6 +3,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface ConfigState {
   theme: "light" | "dark";
+  isOpenTopicDialogVisible: boolean;
 }
 
 // Get initial theme from localStorage or default to light
@@ -19,6 +20,7 @@ const getInitialTheme = (): "light" | "dark" => {
 
 const initialState: ConfigState = {
   theme: getInitialTheme(),
+  isOpenTopicDialogVisible: false,
 };
 
 export const configSlice = createSlice({
@@ -28,10 +30,13 @@ export const configSlice = createSlice({
     setTheme: (state, action: PayloadAction<"light" | "dark">) => {
       state.theme = action.payload;
     },
+    setIsOpenTopicDialogVisible: (state, action: PayloadAction<boolean>) => {
+      state.isOpenTopicDialogVisible = action.payload;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setTheme } = configSlice.actions;
+export const { setTheme, setIsOpenTopicDialogVisible } = configSlice.actions;
 
 export default configSlice.reducer;

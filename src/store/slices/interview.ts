@@ -8,7 +8,6 @@ export interface InterviewState {
   isLoading: boolean;
   boardData: ExcalidrawInitialDataState | null; // URL or base64 string of the current board image
   confirmViewSolution: boolean;
-  confirmResetBoard: boolean;
   confirmEvaluation?: boolean;
   refreshCounter: number; // To trigger re-render of Excalidraw component
 }
@@ -18,7 +17,6 @@ const initialState: InterviewState = {
   isLoading: false,
   boardData: null,
   confirmViewSolution: false,
-  confirmResetBoard: false,
   confirmEvaluation: false,
   refreshCounter: 0,
 };
@@ -49,12 +47,6 @@ export const interviewSlice = createSlice({
     ) => {
       state.confirmViewSolution = action.payload;
     },
-    setConfirmResetBoard: (
-      state: InterviewState,
-      action: PayloadAction<boolean>
-    ) => {
-      state.confirmResetBoard = action.payload;
-    },
     setConfirmEvaluation: (
       state: InterviewState,
       action: PayloadAction<boolean>
@@ -73,7 +65,6 @@ export const {
   setIsLoading,
   setBoardData,
   setConfirmViewSolution,
-  setConfirmResetBoard,
   setConfirmEvaluation,
   incrementRefreshCounter,
 } = interviewSlice.actions;

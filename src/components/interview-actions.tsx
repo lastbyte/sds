@@ -12,7 +12,6 @@ import {
 import { ClipboardCheckIcon, EyeIcon } from "lucide-react";
 import { useSelector } from "react-redux";
 import EvaluationDialog from "./evaluation-dialog";
-import ResetBoardDialog from "./reset-board-dialog";
 import SolutionDialog from "./solution-dialog";
 import { ButtonGroup } from "./ui/button-group";
 
@@ -24,9 +23,6 @@ export default function InterviewActions() {
     <>
       {/* Evaluation Dialog - separate from dropdown */}
       <EvaluationDialog />
-
-      {/* clear progress Dialog -separate from dropdown */}
-      <ResetBoardDialog />
 
       {/* clear progress Dialog -separate from dropdown */}
       <SolutionDialog />

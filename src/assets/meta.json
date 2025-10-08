@@ -3,7 +3,7 @@
   "description": "A curated collection of system design examples to help you master the art of designing scalable systems. Perfect for interview preparation and learning best practices.",
   "questions": {
     "choosing-the-right-database": {
-      "id": 0,
+      "id": 21,
       "title": "Choosing the Right Database",
       "slug": "choosing-the-right-database",
       "description": "Understand the differences between SQL and NoSQL databases, and learn how to choose the right one for your application.",

@@ -37,8 +37,12 @@ export function DataTable() {
     React.useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = React.useState({});
 
+  const questions = React.useMemo(() => {
+    return Object.values(data.questions) as ListItem[];
+  }, []);
+
   const table = useReactTable({
-    data: Object.values(data.questions) as ListItem[],
+    data: questions,
     columns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
