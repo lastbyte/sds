@@ -15,7 +15,7 @@ export default function CellTitle({ row }: CellContext<ListItem, unknown>) {
   return row.original.practice != true ? (
     <div className="flex flex-col cursor-pointer">
       <Link to={`/whiteboard/${row.original.slug}`}>
-        <div className="font-medium text-xs sm:text-sm truncate">
+        <div className="font-medium text-xs sm:text-sm truncate underline underline-offset-4 decoration-gray-500 decoration-dotted">
           {row.getValue("title") as string}
         </div>
         <Tooltip delayDuration={100}>
@@ -38,7 +38,7 @@ export default function CellTitle({ row }: CellContext<ListItem, unknown>) {
         dispatch(setIsOpenTopicDialogVisible(true));
       }}
     >
-      <div className="font-medium text-xs sm:text-sm truncate">
+      <div className="font-medium text-xs sm:text-sm truncate underline underline-offset-4 decoration-gray-500 decoration-dotted">
         {row.getValue("title") as string}
       </div>
       <Tooltip delayDuration={100}>
