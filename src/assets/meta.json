@@ -60,6 +60,15 @@
       "practice": true,
       "tags": ["E-commerce", "Database Design", "Microservices"]
     },
+    "design-distributed-message-queue": {
+      "id": 23,
+      "title": "Design a Distributed Message Queue",
+      "slug": "design-distributed-message-queue",
+      "description": "Design a distributed message queue system like Kafka, focusing on message storage, delivery guarantees, and scalability.",
+      "difficulty": "hard",
+      "practice": true,
+      "tags": ["Distributed Systems", "Scalability", "Fault Tolerance"]
+    },
     "design-chat-application": {
       "id": 5,
       "title": "Design a Chat Application",
