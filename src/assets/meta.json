@@ -29,6 +29,19 @@
       "practice": true,
       "tags": ["Database Design", "Caching", "Load Balancing"]
     },
+    "design-tiktok": {
+      "id": 22,
+      "title": "Design TikTok",
+      "slug": "design-tiktok",
+      "description": "Design a short-video sharing platform like TikTok, focusing on video upload, streaming, and recommendation algorithms.",
+      "difficulty": "hard",
+      "practice": true,
+      "tags": [
+        "Content Delivery Networks",
+        "Database Design",
+        "Machine Learning"
+      ]
+    },
     "design-url-shortener": {
       "id": 3,
       "title": "Design a URL Shortener",
