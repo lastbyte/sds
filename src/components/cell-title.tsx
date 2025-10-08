@@ -24,7 +24,7 @@ export default function CellTitle({ row }: CellContext<ListItem, unknown>) {
               {row.original.description as string}
             </div>
           </TooltipTrigger>
-          <TooltipContent className="text-center text-xs sm:text-sm w-[220px]">
+          <TooltipContent className="text-center text-xs w-100 hyphens-auto wrap-break-word px-0">
             {row.original.description as string}
           </TooltipContent>
         </Tooltip>
@@ -47,7 +47,7 @@ export default function CellTitle({ row }: CellContext<ListItem, unknown>) {
             {row.original.description as string}
           </div>
         </TooltipTrigger>
-        <TooltipContent className="text-center text-xs sm:text-sm w-[220px]">
+        <TooltipContent className="text-center text-xs w-100 wrap-break-word hyphens-auto px-0">
           {row.original.description as string}
         </TooltipContent>
       </Tooltip>
