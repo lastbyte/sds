@@ -69,6 +69,15 @@
       "practice": true,
       "tags": ["Distributed Systems", "Scalability", "Fault Tolerance"]
     },
+    "design-an-ad-click-event-aggregation": {
+      "id": 24,
+      "title": "Design an Ad Click Event Aggregation System",
+      "slug": "design-an-ad-click-event-aggregation",
+      "description": "Design a system to aggregate ad click events in real-time, focusing on data ingestion, processing, and storage.",
+      "difficulty": "hard",
+      "practice": true,
+      "tags": ["Real-time Systems", "Data Processing", "Scalability"]
+    },
     "design-chat-application": {
       "id": 5,
       "title": "Design a Chat Application",
